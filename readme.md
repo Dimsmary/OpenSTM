@@ -1,4 +1,4 @@
-![openSTM](C:\Users\79937\Documents\GitHub\OpenSTM\openSTM.jpg)
+![openSTM](openSTM.jpg)
 
 # 简介
 
