@@ -1,0 +1,41 @@
+#######################################
+# Syntax Coloring Map For arduinoFFT
+#######################################
+
+#######################################
+# Datatypes	(KEYWORD1)
+#######################################
+
+arduinoFFT	KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+
+ComplexToMagnitude	KEYWORD2
+Compute	KEYWORD2
+DCRemoval	KEYWORD2
+Windowing	KEYWORD2
+Exponent	KEYWORD2
+Revision	KEYWORD2
+MajorPeak	KEYWORD2
+MajorPeakParabola	KEYWORD2
+
+#######################################
+# Constants (LITERAL1)
+#######################################
+
+twoPi	LITERAL1
+fourPi	LITERAL1
+FFT_FORWARD	LITERAL1
+FFT_REVERSE	LITERAL1
+FFT_WIN_TYP_RECTANGLE	LITERAL1
+FFT_WIN_TYP_HAMMING	LITERAL1
+FFT_WIN_TYP_HANN	LITERAL1
+FFT_WIN_TYP_TRIANGLE	LITERAL1
+FFT_WIN_TYP_NUTTALL	LITERAL1
+FFT_WIN_TYP_BLACKMAN	LITERAL1
+FFT_WIN_TYP_BLACKMAN_NUTTALL	LITERAL1
+FFT_WIN_TYP_BLACKMAN_HARRIS	LITERAL1
+FFT_WIN_TYP_FLT_TOP	LITERAL1
+FFT_WIN_TYP_WELCH	LITERAL1
