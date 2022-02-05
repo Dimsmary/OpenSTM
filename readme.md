@@ -60,3 +60,9 @@
 
   减震台下加装了<网球>，减震效果拔群
 
+- 2022/2/05
+
+  1）系统模拟部分供电改为9V电池供电，数字部分继续使用开关电源。
+  2）ADP5070不工作了，奶奶的！为什么。
+  3）在《 Construction of a scanning tunneling microscope for imaging of carbon nanotubes》P35中发现隧穿电流应在100pA - 10nA，按照现有运放的倍数应该关注1V以内的信号，之前看样子搞错了。
+  4）OPA627的开环电压增益有120dB，输入偏置电流1pA，讲道理用100MΩ的反馈电阻应该是可行的？
