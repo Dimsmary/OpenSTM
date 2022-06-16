@@ -1,50 +1,46 @@
-![openSTM](openSTM.jpg)
+![openSTM](Archive/openSTM.jpg)
 
 # 简介
 
-你好，本项目是一个旨在通过DIY来搭建一个原子级扫描隧道显微镜。
+你好，本项目是一个旨在通过DIY来搭建一个原子级扫描隧道显微镜。  
 
-截止至2021年11月，本项目已经搭建起了不稳定的隧穿电流。
+截止至2022年6月，本项目已经成功测量了隧穿距离-电流曲线、热解石墨（HOPG）的扫描隧道光谱曲线（STS）以及样品无尺寸定性成像。  
+
 
 # 开源文件结构介绍
 
-由于本项目尚未完成，故在此仅对已开源的文件进行简单介绍，暂不详细介绍使用方法。
+*由于时间关系，详细的说明文档将在后续完善。  
 
-- 3DModels
-
-  该目录包括了使用SolidWorks绘制的扫描隧道显微镜模型。
-
-- ArduinoProject
-
-  该目录包括了使用[Arduino](https://www.arduino.cc/)（[PlatformIO](https://platformio.org/)）完成的工程。
-
-  - DAC_CONTROLLER
-
-    该目录包括了以ESP32主控制器，用于控制DAC的工程（使用了LVGL图形库）。
-
-  - ViberationDetector
-
-    该目录包括了用于机械振动频率分析的小工具。（使用了MPU6050及FFT库）。
-
-- Documents
-
+- Archive  
+  该目录下为第一代显微镜的开源资料，详见其内readme  
+- 3DModel  
+  该目录内包括了外壳设计文件、CNC加工所需的STEP文件  
+- Software  
+  该目录下包括了单片机程序（使用[Arduino](https://www.arduino.cc/)、[PlatformIO](https://platformio.org/)完成），用于控制单片机的Python程序（通过串口与单片机通讯，界面设计基于QT），用于转换扫描图像的Python程序。
+- Document
   该目录下包括了在开发过程中参考的论文、数据手册。（如涉及版权问题，请提交Issue删除）
 
-- PCBs
+## 电路部分
+- 电路使用嘉立创EDA进行绘制，请移步[OSHWHUB](https://oshwhub.com/Dimsmary/4ieRpV8S00kGn1MTpsc4MyZat8MwQPzn)，点击右上方的“编辑器打开”。
 
-  该目录下包括了DAC控制板、前级放大器、DAC板的立创EDA工程。
+# 成果
+## 隧穿距离-电流曲线
+![D-I_curve](readme_image/D-I_curve.png)  
+![D-I_curve_diffrate](readme_image/D-I_curve_diffrate.png)  
 
-- PythonScripts
+## 热解石墨（HOPG）的扫描隧道光谱曲线
+![STSCruve](readme_image/STSCruve.png)
 
-  该目录下包括了Python脚本工具，目前仅有用于数干涉条纹的工具。
+## 热解石墨（HOPG）样品的无尺寸定性成像
+![repeat_test](readme_image/repeat_test.png)  
+![SCANData-V-0.05-D1-S10-Z26450-R-1000to1000.xlsx](readme_image/SCANData-V-0.05-D1-S10-Z26450-R-1000to1000.xlsx.bmp)  
+![SCANData-V-0.05-D1-S10-Z32750-R-1000to1000.xlsx](readme_image/SCANData-V-0.05-D1-S10-Z32750-R-1000to1000.xlsx.bmp)  
+![SCANData-V-0.5-D1-S10-Z27575-R-1000to1000.xlsx](readme_image/SCANData-V-0.5-D1-S10-Z27575-R-1000to1000.xlsx.bmp)  
 
-- Simulation
-
-  该目录放置仿真文件，目前仅有ADP5070基于SpiceSimulation的仿真。
 
 # 联系我
 
-如果你也想制作一个STM显微镜，或者对我有什么建议的话，可以在此页面提交Issue。
+  如果你也想制作一个STM显微镜，或者对我有什么建议的话，可以在此页面提交Issue。
 
 # 开发记录
 
@@ -99,5 +95,8 @@
 
 - 2022/5/04  
   毕业设计论文攥写完成70%，开始编写恒流扫描算法。  
+
+- 2022/6/16  
+  第二代显微镜开源资料公布  
   
   

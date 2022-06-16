@@ -1,0 +1,5 @@
+ADC_ads8689	KEYWORD1
+transmit	KEYWORD2
+readBuffer	KEYWORD2
+inputAvailable	KEYWORD2
+clearBuffer	KEYWORD2
