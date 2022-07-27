@@ -1,4 +1,4 @@
-<img src="file:///E:/GitHub/OpenSTM/openSTM.jpg" title="" alt="openSTM" data-align="center">
+<img src="openSTM.jpg" title="" alt="openSTM" data-align="center">
 
 # 简介
 
