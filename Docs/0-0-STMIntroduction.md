@@ -136,9 +136,13 @@ $$
 # 参考文献
 
 [1].    Lounis S. Theory of scanning tunneling microscopy[J]. arXiv preprint arXiv:1404.0961, 2014.
+
 [2].    Bai C. Scanning tunneling microscopy and its application[M]. Springer Science & Business Media, 2000.
+
 [3].    Baird D, Shew A. Probing the history of scanning tunneling microscopy[J]. Discovering the nanoscale, 2004, 2: 145-156.
+
 [4].    Merzbacher E. Quantum mechanics[M]. Jones & Bartlett Publishers, 1961.
+
 [5].    曾谨言. 量子力学导论[M]. 第二版. 北京大学出版社, 2001.
 
 [6].    王琦. 高稳定扫描隧道显微镜的研制与应用[D].  中国科学技术大学,2014.
