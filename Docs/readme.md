@@ -12,6 +12,8 @@
 - [STM基本结构](0-1-STMBasicStructure.md)
 - [STM工作模式](0-2-STMWorkMode.md)
 
-### v2.0.0构建指南
+### 各组成部分设计
 
 - [前级放大器设计](1-1-PreampDesign.md)
+- [探针制作](readme.md)
+- [扫描头设计](1-3-ScanHead.md)
