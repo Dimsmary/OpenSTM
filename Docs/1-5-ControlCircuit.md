@@ -11,7 +11,7 @@
 
         由于ESP32单片机具有双核心高速处理器、多个硬件SPI接口、两个硬件串口，能够非常好地满足本项目对于主控制器的条件，故主控制器使用ESP32作为核心处理单元。主控制器与电源芯片集成在同一块控制PCB上，电源芯片为步进电机控制器以及数模、模数转换器提供电源。
 
-![cf53fde06dd12145b843b3e40d60889d.png](E:\GitHub\OpenSTM\Docs\media\cf53fde06dd12145b843b3e40d60889d.png)
+![cf53fde06dd12145b843b3e40d60889d.png](media/cf53fde06dd12145b843b3e40d60889d.png)
 
         （1）交互接口方面，控制PCB上的USB接口用于与上位机进行串口通讯，为保证传输速率，波特率为250000。数模、模数转换器接口用于与数模、模数转换器的供电与数据交换，步进电机控制器接口用于与并不仅电机控制器的供电与数据交换。
         （2）电源设计方面，控制PCB一共设计了两组电源：用于模拟电路用途的电源以及用于数字用途的电源，两组电源由分立的锂电池进行供电，并且两组电源电路的大地进行了隔离以减少噪音耦合。
@@ -20,13 +20,13 @@
 
         对于模拟用途的电源，其包括5V、±12V、±15V五个低噪声电源平面，这里的5V平面与数字用途的5V平面无连接关系。模拟通途的电源平面由四组2S（即两个3.7V锂电池包串联）提供电压，经过低噪声LDO降压至各个电压的电源平面。正电源使用的LDO型号为ADP7142，其最低噪声为11μVrms。负电源使用的LDO型号为ADP7182，其最低噪声为18μVrms。5V电源平面用于对ADC的供电，±15V电源平面用于DAC的供电，±12V电源平面用于前级放大器的供电。由于DAC、ADC以及前级放大器对电源噪声由较高的要求，故再次采用了低噪声LDO进行供电。
 
-![91fa6c5421bcb7f6230899576a2ab8f6.png](E:\GitHub\OpenSTM\Docs\media\91fa6c5421bcb7f6230899576a2ab8f6.png)
+![91fa6c5421bcb7f6230899576a2ab8f6.png](media/91fa6c5421bcb7f6230899576a2ab8f6.png)
 
-![129f2700b602314ea59dcbd4c559c63d.png](E:\GitHub\OpenSTM\Docs\media\129f2700b602314ea59dcbd4c559c63d.png)
+![129f2700b602314ea59dcbd4c559c63d.png](media/129f2700b602314ea59dcbd4c559c63d.png)
 
         （3）单片机逻辑设计方面，由于ESP32具有两个独立的CPU核心，故在程序设计时可以设计两个循环在两个核心上分别同时运行，用于接收上位机命令与执行进近、扫描等操作。
 
-![6f63db4ce420b00cce9f6ebeb20b3493.png](E:\GitHub\OpenSTM\Docs\media\6f63db4ce420b00cce9f6ebeb20b3493.png)
+![6f63db4ce420b00cce9f6ebeb20b3493.png](media/6f63db4ce420b00cce9f6ebeb20b3493.png)
 
 ## 步进电机控制器
 
@@ -34,9 +34,9 @@
 
         步进电机驱动器采用ATMEGA328P单片机作为主控，ULN2003大电流驱动阵列作为线圈通断控制器。ATMEGA328P能够接受来自主控制器的串口型号，从而实现对步进电机状态的精确控制。
 
-![58e04a652eb3d27a40f8f106d10429dc.png](E:\GitHub\OpenSTM\Docs\media\58e04a652eb3d27a40f8f106d10429dc.png)
+![58e04a652eb3d27a40f8f106d10429dc.png](media/58e04a652eb3d27a40f8f106d10429dc.png)
 
-![7e4af1c2b66118fac1a5d5073c94313b.png](E:\GitHub\OpenSTM\Docs\media\7e4af1c2b66118fac1a5d5073c94313b.png)
+![7e4af1c2b66118fac1a5d5073c94313b.png](media/7e4af1c2b66118fac1a5d5073c94313b.png)
 
 ## 数模、模数转换器
 
@@ -44,7 +44,7 @@
 
         对于扫描头中的压电陶瓷而言，对其施加的电压大小决定了压电陶瓷形变量大小，即扫描图的运动范围大小，故DAC的分辨率将直接决定了扫描头的分辨率。在综合了性能与价格考虑后，本项目采用了AD5761型16位分辨率DAC，该芯片能够输出±10V范围的电压。本项目使用了四颗AD5761芯片，其中三颗用于控制压电扫描头，一颗用于对样品施加偏置电压。
 
-![bb45f02ad3e0953ba04fae7a71dcecac.png](E:\GitHub\OpenSTM\Docs\media\bb45f02ad3e0953ba04fae7a71dcecac.png)
+![bb45f02ad3e0953ba04fae7a71dcecac.png](media/bb45f02ad3e0953ba04fae7a71dcecac.png)
 
         模数转换器（ADC）的功能与DAC相反，其是能够读取模拟电压并将模拟电压值转换成数字量的一种器件。本项目采用ADS8689型16为分辨率ADC，用于读取前级放大器的输出电压。该芯片能够读取±12.288V范围的电压，能够非常好的适配前级放大器的输出范围，并且提供100kSPS的采样速率，能够在扫描隧道显微镜成像时提供较高的扫描速度。
 
@@ -54,11 +54,7 @@ $$
 \Delta V=\frac{输入/输出电压范围}{2^{分辨率}}
 $$
 
-
         通过公式，可计算出AD5761型DAC工作在±10V范围时的能够输出的最小电压间隔为：
-
-
-
 
 $$
 \Delta V1=\frac{20}{2^{16}}=0.31mV
@@ -77,7 +73,7 @@ $$
 
         故在实际操作中，仅需要DAC提供三组电压X、Y、Z，并通过运算放大器组成的压电扫描头电压运算器将X、Y、Z电压运算为四组大小为Z+Y、Z-Y、Z+X、Z-X的电压即可完成三维电压对压电扫描头四个区域电压的解算。
 
-![309d27d5b988edc9960c1170ece149f4.png](E:\GitHub\OpenSTM\Docs\media\309d27d5b988edc9960c1170ece149f4.png)
+![309d27d5b988edc9960c1170ece149f4.png](media/309d27d5b988edc9960c1170ece149f4.png)
 
         通过上图所示的四颗运算放大器组成的加减法运算器即可完成对电压的转换。U9.1将DAC输出的电压Z与电压X进行加法运算，输出Z+X电压，U9.2将DAC输出的电压Z与电压X进行减法运算，输出Z-X电压，U10.1、U10.2同理。
 
@@ -87,9 +83,9 @@ $$
 
         下面是显微镜控制单元的用户交互界面（GUI）组成：
 
-![a5162a1419bf4229ea3728c8a3184de2.png](E:\GitHub\OpenSTM\Docs\media\a5162a1419bf4229ea3728c8a3184de2.png)
+![a5162a1419bf4229ea3728c8a3184de2.png](media/a5162a1419bf4229ea3728c8a3184de2.png)
 
-![c84dbfa95fc936e4f9170d2be83c8830.png](E:\GitHub\OpenSTM\Docs\media\c84dbfa95fc936e4f9170d2be83c8830.png)
+![c84dbfa95fc936e4f9170d2be83c8830.png](media/c84dbfa95fc936e4f9170d2be83c8830.png)
 
         显微镜控制单元的界面由两部分组成：串口连接控制面板（UART Port Select）以及显微镜行为控制面板。串口连接控制面板位于GUI的最底端，提供了串口扫描、串口选择、波特率选择及连接的功能。在串口未连接成功时，显微镜行为控制面板将不可用。
 
@@ -98,6 +94,6 @@ $$
 
         下面是成像单元的GUI组成：
 
-![6117a6b10c838e163e3151fb91ff56a0.png](E:\GitHub\OpenSTM\Docs\media\6117a6b10c838e163e3151fb91ff56a0.png)
+![6117a6b10c838e163e3151fb91ff56a0.png](media/6117a6b10c838e163e3151fb91ff56a0.png)
 
         成像单元能够读取显微镜控制单元输出的扫描原始数据并将其转换为通用的图像格式。
