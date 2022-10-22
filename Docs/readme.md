@@ -19,3 +19,4 @@
 - [扫描头设计](1-3-ScanHead.md)
 - [机械结构设计](1-4-MachenicalDesign.md)
 - [控制电路设计](1-5-ControlCircuit.md)
+- [减震系统设计](1-6-DampingSystem.md)
