@@ -15,5 +15,7 @@
 ### 各组成部分设计
 
 - [前级放大器设计](1-1-PreampDesign.md)
-- [探针制作](readme.md)
+- [探针制作](1-2-Probe.md)
 - [扫描头设计](1-3-ScanHead.md)
+- [机械结构设计](1-4-MachenicalDesign.md)
+- [控制电路设计](1-5-ControlCircuit.md)
