@@ -2,9 +2,9 @@
 
 # 简介
 
-你好，本项目是一个旨在通过DIY来搭建一个原子级扫描隧道显微镜。  
+嗨，本项目是一个旨在通过DIY来搭建一个原子级扫描隧道显微镜。  
 
-截止至2022年6月，本项目已经成功测量了隧穿距离-电流曲线、热解石墨（HOPG）的扫描隧道光谱曲线（STS）以及样品无尺寸定性成像。  
+截止至2022年6月，本项目已经成功测量了隧穿距离-电流曲线、热解石墨（HOPG）的偏压-电流曲线以及样品无尺寸定性成像。  
 
 # 开源文件结构介绍
 
@@ -44,7 +44,10 @@
 
 ### [Release OpenSTM v1.0.0](https://github.com/Dimsmary/OpenSTM/releases/tag/v1.0.0)
 
-这是初代STM方案，机械结构采用两块铝板搭建（[https://www.bilibili.com/video/BV1Jr4y1v7gq）](https://www.bilibili.com/video/BV1Jr4y1v7gq%EF%BC%89)  
+这是初代STM方案，机械结构采用两块铝板搭建
+
+[https://www.bilibili.com/video/BV1Jr4y1v7gq](https://www.bilibili.com/video/BV1Jr4y1v7gq)
+
 方案较为简单，没有取得能够用于分析的实验结果，但后续方案的搭建基于本初代方案进行搭建，本版本的方案仅供参考，暂不提供详细的文档资料。  
 发布的方案文件包括了：
 
@@ -62,7 +65,7 @@ https://www.bilibili.com/video/BV1eB4y1S7u8
 该方案的结构能够测量：
 
 - 隧穿距离-电流曲线
-- 扫描隧道谱（STS）
+- 样品偏压-电流曲线
 
 v2.0.0.zip内含的文件包括：
 
@@ -75,18 +78,18 @@ v2.0.0.zip内含的文件包括：
 ## 隧穿距离-电流曲线
 
 ![D-I_curve](readme_image/D-I_curve.png)  
+
+![LOG_D-I_curve.png](readme_image/LOG_D-I_curve.png)
+
 ![D-I_curve_diffrate](readme_image/D-I_curve_diffrate.png)  
 
-## 热解石墨（HOPG）的扫描隧道光谱曲线
+## 热解石墨（HOPG）的偏压-电流曲线
 
 ![STSCruve](readme_image/STSCruve.png)
 
 ## 热解石墨（HOPG）样品的无尺寸定性成像
 
 ![repeat_test](readme_image/repeat_test.png)  
-![SCANData-V-0.05-D1-S10-Z26450-R-1000to1000.xlsx](readme_image/SCANData-V-0.05-D1-S10-Z26450-R-1000to1000.xlsx.bmp)  
-![SCANData-V-0.05-D1-S10-Z32750-R-1000to1000.xlsx](readme_image/SCANData-V-0.05-D1-S10-Z32750-R-1000to1000.xlsx.bmp)  
-![SCANData-V-0.5-D1-S10-Z27575-R-1000to1000.xlsx](readme_image/SCANData-V-0.5-D1-S10-Z27575-R-1000to1000.xlsx.bmp)  
 
 # 联系我
 
