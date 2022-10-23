@@ -1,5 +1,6 @@
 <img src="openSTM.jpg" title="" alt="openSTM" data-align="center">
 
+[toc]
 # 简介
 
 嗨，本项目是一个旨在通过DIY来搭建一个原子级扫描隧道显微镜。  
@@ -7,6 +8,8 @@
 截止至2022年6月，本项目已经成功测量了隧穿距离-电流曲线、热解石墨（HOPG）的偏压-电流曲线以及样品无尺寸定性成像。  
 
 # 开源文件结构介绍
+
+## 文件介绍
 
 *由于时间关系，详细的说明文档将在后续完善。  
 
@@ -22,17 +25,23 @@
 - Document
   该目录下包括了在开发过程中参考的论文、数据手册。（如涉及版权问题，请提交Issue删除）
 
-- **Docs**
+- Docs
   
-  **该目录下的文档介绍了当前版本下的STM构建、设计原理。**
+  该目录下的文档介绍了当前版本下的STM构建、设计原理。
 
 ## 电路部分
 
 - 电路使用嘉立创EDA进行绘制，请移步[OSHWHUB](https://oshwhub.com/Dimsmary/4ieRpV8S00kGn1MTpsc4MyZat8MwQPzn)，点击右上方的“编辑器打开”。
 
+# 开发技术文档
+
+GitHub（国际节点）：[<u>技术文档 - GitHub</u> ](https://github.com/Dimsmary/OpenSTM/tree/main/Docs)
+
+Gitee（国内节点）：[<u>技术文档 - Gitee</u>](https://gitee.com/dimsmary/OpenSTM/tree/main/Docs)
+
 # 版本发布命名规则
 
-截至2022/07，目前已公布了两个不同机械结构的STM方案
+截至2022/07，目前已公布了两个不同机械结构的STM方案  
 
 虽然目前STM的搭建方案仍在修改完善，但目前发布的资料集合在一定程度上是能够运行的，故本项目将参考软件发行的方式，在STM方案更新后，采用Release的方式对方案进行发布，每次发布的STM方案版本号命名规则如下：
 
@@ -42,11 +51,9 @@
 
 # 已发布的STM方案版本
 
-### [Release OpenSTM v1.0.0](https://github.com/Dimsmary/OpenSTM/releases/tag/v1.0.0)
+## [<u>Release OpenSTM v1.0.0</u>](https://github.com/Dimsmary/OpenSTM/releases/tag/v1.0.0)
 
-这是初代STM方案，机械结构采用两块铝板搭建
-
-[https://www.bilibili.com/video/BV1Jr4y1v7gq](https://www.bilibili.com/video/BV1Jr4y1v7gq)
+这是初代STM方案，机械结构采用两块铝板搭建：[<u>你，亲眼看过原子吗？ - 哔哩哔哩</u>](https://www.bilibili.com/video/BV1Jr4y1v7gq)  
 
 方案较为简单，没有取得能够用于分析的实验结果，但后续方案的搭建基于本初代方案进行搭建，本版本的方案仅供参考，暂不提供详细的文档资料。  
 发布的方案文件包括了：
@@ -57,21 +64,20 @@
 - 用于测量干涉条纹的Python脚本
 - LTSpice对电源芯片的仿真文件
 
-### [Release OpenSTM v2.0.0](https://github.com/Dimsmary/OpenSTM/releases/tag/v2.0.0)
+## [<u>Release OpenSTM v2.0.0</u>](https://github.com/Dimsmary/OpenSTM/releases/tag/v2.0.0)
 
-该版本方案为第二代显微镜结构：
+该版本方案为第二代显微镜结构：  [<u>耗时九个月，我可能来到了纳米尺度...... - 哔哩哔哩</u>](https://www.bilibili.com/video/BV1eB4y1S7u8)
 
-https://www.bilibili.com/video/BV1eB4y1S7u8  
 该方案的结构能够测量：
 
 - 隧穿距离-电流曲线
-- 样品偏压-电流曲线
+- 扫描隧道谱（STS）
 
 v2.0.0.zip内含的文件包括：
 
 - 3DModel：SolidWorks绘制的3D模型文件、CNC加工所需的STEP文件
 - PCB：立创EDA专业版绘制的原理图、PCB文件
-- SoftWare：在Arduino文件夹下，包含ESP32单片机的控制程序、ATMEGA 328P单片机的控制程序。在Python文件夹下，包含了上位机控制软件、图像转换程序
+- Software：在Arduino文件夹下，包含ESP32单片机的控制程序、ATMEGA 328P单片机的控制程序。在Python文件夹下，包含了上位机控制软件、图像转换程序
 
 # 目前取得的成果
 
