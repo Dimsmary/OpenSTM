@@ -30,14 +30,7 @@ $$
 
 ![98e9932244c229f4809f8dd125fce3ca.png](media/98e9932244c229f4809f8dd125fce3ca.png)
 
-即势能可以通过公式描述为：
-
-$$
-V(x)=\left\{\begin{array}{l}
-0(x\le a, x\ge b) \\
-V_1(a\le x \le b)
-\end{array}\right.
-$$
+即势能可以通过公式描述为：V(x)=0(x<a, x>a), V(x)=V_1(a<x<b)
 
         在量子力学中，电子将被满足薛定谔方程的波函数ψ(x)描述。此处讨论电子在一维定态下量子隧穿的情况，设电子的势能方程为：
 
