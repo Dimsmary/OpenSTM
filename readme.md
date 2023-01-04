@@ -16,6 +16,9 @@
   - [热解石墨（HOPG）样品的无尺寸定性成像](#热解石墨hopg样品的无尺寸定性成像)
 - [联系我](#联系我)
 - [开发记录](#开发记录)
+- [致谢](#致谢)
+- [参考工程](#参考工程)
+- [主要参考文献](#主要参考文献)
   
 # 简介
 
@@ -180,6 +183,104 @@ v2.0.0.zip内含的文件包括：
   
   开始设计粘滑压电马达
 
-- 2022/1026
+- 2022/10/26
   
   完善技术文档
+  
+- 2023/1/4
+  第三代电路、机械结构重构完成，粘滑压电马达设计完成，进入调试阶段（目前未发布，待验证后发布）。
+  
+  （1）电路电源方面：重构后的电路采用ADP5070搭配低噪声LDO的方案提供多个电源轨道（双±12V、5V），ADP5070采用紫米35W双C口电源适配器进行5V供电（原因在于该电源纹波极低，峰峰值在13mV左右，呈现为锯齿状）。
+  
+  （2）PCB板层设计方面：新一代电路板分为三块：电源板、MCU板、控制板。电源线在板之间采用同轴信号线连接，数据线采用IDC排线连接。
+  
+  （3）电路改进方面：MCU板继续沿用ESP32作为控制器，但模组型号更新为ESP32-S3，并留有WIFI天线挖槽，为日后升级做准备。控制板沿用第二代大部分设计保持不变，继续使用AD5761+OPA2227的方案对扫描头进行控制，但由于压电滑台的引入，控制板额外添加了AD8761作为对样品施加偏压的DAC，原本用于施加偏压的DAC现用于控制压电滑台。
+  
+  （4）机械结构设计方面：新一代机械结构整体尺寸缩小，并引入了粘-滑压电滑台进行粗进近（参考文章《Open-source XYZ nanopositioner for high-precision analytical applications》），并对前级放大器进行了金属全包裹屏蔽，进一步降低噪声耦合。
+  
+  
+# 致谢
+
+**五邑大学以及五邑大学的老师们**
+
+**深圳嘉立创科技集团股份有限公司**
+
+**Jürgen Müller**
+
+**中国科学院光电技术研究所**
+
+**所有为本项目提供建议的哔哩哔哩朋友**
+
+# 参考工程
+
+[1] John Alexander: STM Project, http://web.archive.org/web/20121107205242/http://www.geocities.com/spm_stm/Project.html
+
+[2] Dan Berard: Home-Built STM, https://dberard.com/home-built-stm/
+
+[3] Jürgen Müller: Homebrew STM, http://www.e-basteln.de/other/stm/overview/
+
+[4] NanoSurf: NaioSTM, https://www.nanosurf.com/en/products/naiostm-stm-for-nanoeducation
+
+# 主要参考文献 
+
+[1].  Binnig G, Rohrer H. Scanning tunneling microscope: U.S. Patent 4,343,993[P]. 1982-8-10.
+
+[2].  Besocke K. An easily operable scanning tunneling microscope[J]. Surface Science, 1987, 181(1-2): 145-153.
+
+[3].  Ellis M D. Construction of a scanning tunneling microscope for imaging of carbon nanotubes[D]. Texas Tech University, 1998.
+
+[4].  Rogers B L, Shapter J G, Skinner W M, et al. A method for production of cheap, reliable pt–ir tips[J]. Review of Scientific Instruments, 2000, 71(4): 1702-1705.
+
+[5].  王琦. 高稳定扫描隧道显微镜的研制与应用[D].  中国科学技术大学,2014.
+
+[6].  Petersen J P, Kandel S A. Circuit design considerations for current preamplifiers for scanning tunneling microscopy[J]. 2017.
+
+[7].  Lounis S. Theory of scanning tunneling microscopy[J]. arXiv preprint arXiv:1404.0961, 2014.
+
+[8].  Purdue University. TEM Pictures of STM Tips[EB/OL]. 2002[2022-9-20]. https://www.physics.purdue.edu/nanophys/uhvstm/tip.html.
+
+[9].  Bai C. Scanning tunneling microscopy and its application[M]. Springer Science & Business Media, 2000.
+
+[10].  Nasrollahzadeh M, Sajadi M S, Atarod M, et al. An introduction to green nanotechnology[M]. Academic Press, 2019:199-322.
+
+[11].  Baird D, Shew A. Probing the history of scanning tunneling microscopy[J]. Discovering the nanoscale, 2004, 2: 145-156.
+
+[12].  Merzbacher E. Quantum mechanics[M]. Jones & Bartlett Publishers, 1961.
+
+[13].  曾谨言. 量子力学导论[M]. 第二版. 北京大学出版社, 2001.
+
+[14].  Grafstrom S, Kowalski J, Neumann R. Design and detailed analysis of a scanning tunnelling microscope[J]. Measurement Science and Technology, 1990, 1(2): 139.
+
+[15].  Nam A J, Teren A, Lusby T A, et al. Benign making of sharp tips for STM and FIM: Pt, Ir, Au, Pd, and Rh[J]. Journal of Vacuum Science & Technology B: Microelectronics and Nanometer Structures Processing, Measurement, and Phenomena, 1995, 13(4): 1556-1559.
+
+[16].  Hahn J R, Hong Y A, Kang H. Electron tunneling across an interfacial water layer inside an STM junction: tunneling distance, barrier height and water polarization effect[J]. Applied Physics A, 1998, 66(1): S467-S472.
+
+[17]. Woo D H, Choi E M, Yoon Y H, et al. Current–distance–voltage characteristics of electron tunneling through an electrochemical STM junction[J]. Surface science, 2007, 601(6): 1554-1559.
+
+[18]. Alexander J D, Tortonese M, Nguyen T. Atomic force microscope with integrated optics for attachment to optical microscope: U.S. Patent 5,952,657[P]. 1999-9-14.
+
+[19]. 陈大任,李国荣,殷庆瑞.逆压电效应的压电常数和压电陶瓷微位移驱动器[J].无机材料学报,1997(06):861-866.
+
+[20]. Fialka J, Benes P, Michlovska L, et al. Measurement of thermal depolarization effects in piezoelectric coefficients of soft PZT ceramics via the frequency and direct methods[J]. Journal of the European Ceramic Society, 2016, 36(11): 2727-2738.
+
+[21]. Instrumentation reference book[M]. Butterworth-Heinemann, 2009.
+
+[22]. Lanza di Scalea F. Measurement of thermal expansion coefficients of composites using strain gages[J]. Experimental mechanics, 1998, 38(4): 233-241.
+
+[23]. Wijnen B, Sanders P, Pearce J M. Improved model and experimental validation of deformation in fused filament fabrication of polylactic acid[J]. Progress in Additive Manufacturing, 2018, 3(4): 193-203.
+
+[24]. Oliva A I, Aguilar M, Sosa V. Low-and high-frequency vibration isolation for scanning probe microscopy[J]. Measurement Science and Technology, 1998, 9(3): 383.
+
+[25]. Okano M, Kajimura K, Wakiyama S, et al. Vibration isolation for scanning tunneling microscopy[J]. Journal of Vacuum Science & Technology A: Vacuum, Surfaces, and Films, 1987, 5(6): 3313-3320.
+
+[26]. Walzer K, Sternberg M, Hietschold M. Formation and characterization of coronene monolayers on HOPG (0001) and MoS2 (0001): a combined STM/STS and tight-binding study[J]. Surface science, 1998, 415(3): 376-384.
+
+[27]. Kusunoki K, Sakata I, Miyamura K. Interaction between Tip and HOPG Surface Studied by STS[C]//Analytical Sciences/Supplements Proceedings of IUPAC International Congress on Analytical Sciences 2001 (ICAS 2001). The Japan Society for Analytical Chemistry, 2002: i1267-i1268.
+
+[28]. Chen C J. Theory of scanning tunneling spectroscopy[J]. Journal of Vacuum Science & Technology A: Vacuum, Surfaces, and Films, 1988, 6(2): 319-322.
+
+[29]. El Abedin S Z, Borissenko N, Endres F. Electrodeposition of nanoscale silicon in a room temperature ionic liquid[J]. Electrochemistry communications, 2004, 6(5): 510-514.
+
+[30]. Walzer K, Hietschold M. STM and STS investigation of ultrathin tin phthalocyanine layers adsorbed on HOPG (0001) and Au (111)[J]. Surface science, 2001, 471(1-3): 1-10.
+
+[31].  Liao H S, Werner C, Slipets R, et al. Low-cost, open-source XYZ nanopositioner for high-precision analytical applications[J]. HardwareX, 2022: e00317.
