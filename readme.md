@@ -198,6 +198,14 @@ v2.0.0.zip内含的文件包括：
   
   （4）机械结构设计方面：新一代机械结构整体尺寸缩小，并引入了粘-滑压电滑台进行粗进近（参考文章《Open-source XYZ nanopositioner for high-precision analytical applications》），并对前级放大器进行了金属全包裹屏蔽，进一步降低噪声耦合。
   
+- 2023/1/18
+
+  MCU模组更换为ESP32-WROOM-32E，S3模组的编译出现了一些问题，资料较少暂时无法解决。
+  
+  另外，为了提升MCU的效率，将开发框架从Arduino变更为ESP-IDF（从简单的GPIO翻转代码中发现，Platform IO + Arduino速度为800Khz，Arduino IDE为1.2Mhz，Platform IO + ESP-IDF为1.44Mhz）。
+  
+  
+  
   
 # 致谢
 
