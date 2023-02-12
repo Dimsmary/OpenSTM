@@ -204,6 +204,11 @@ v2.0.0.zip内含的文件包括：
   
   另外，为了提升MCU的效率，将开发框架从Arduino变更为ESP-IDF（从简单的GPIO翻转代码中发现，Platform IO + Arduino速度为800Khz，Arduino IDE为1.2Mhz，Platform IO + ESP-IDF为1.44Mhz）。
   
+- 2023/2/12
+  
+  第三代电路、机械结构修改、验证完成。
+  
+  目前正在重构上位机、控制程序，截止目前已实现探针进近的PID控制，电流相较于上一代设计更加稳定，温漂问题得到很大程度改善。
   
   
   
