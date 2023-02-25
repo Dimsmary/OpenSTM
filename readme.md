@@ -1,4 +1,4 @@
-<img src="openSTM.jpg" title="" alt="openSTM" data-align="center">
+<img src="OpenSTM_.jpg" title="" alt="OpenSTM_" data-align="center">
 
 - [简介](#简介)
 - [分支](#分支)
