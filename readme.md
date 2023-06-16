@@ -13,7 +13,7 @@
 - [目前取得的成果](#目前取得的成果)
   - [隧穿距离-电流曲线](#隧穿距离-电流曲线)
   - [热解石墨（HOPG）的偏压-电流曲线](#热解石墨hopg的偏压-电流曲线)
-  - [热解石墨（HOPG）样品的无尺寸定性成像](#热解石墨hopg样品的无尺寸定性成像)
+  - [热解石墨（HOPG）原子成像](#热解石墨hopg原子成像)
 - [联系我](#联系我)
 - [开发记录](#开发记录)
 - [致谢](#致谢)
@@ -22,9 +22,11 @@
   
 # 简介
 
-嗨，本项目是一个旨在通过DIY来搭建一个原子级（大概）扫描隧道显微镜。  
+嗨，本项目是一个旨在通过DIY来搭建一个原子级扫描隧道显微镜。  
 
-截止至2022年6月，本项目已经成功测量了隧穿距离-电流曲线、热解石墨（HOPG）的偏压-电流曲线以及样品无尺寸定性成像。  
+2022年6月，本项目已经成功测量了隧穿距离-电流曲线、热解石墨（HOPG）的偏压-电流曲线以及样品无尺寸定性成像。  
+
+2023年5月，本项目成功扫描出热解石墨（HOPG）的碳原子。  
 
 # 分支
 
@@ -114,9 +116,9 @@ v2.0.0.zip内含的文件包括：
 
 ![STSCruve](readme_image/STSCruve.png)
 
-## 热解石墨（HOPG）样品的无尺寸定性成像
+## 热解石墨（HOPG）原子成像
 
-![repeat_test](readme_image/repeat_test.png)  
+![hopg](readme_image\hopg.jpg)
 
 # 联系我
 
@@ -318,3 +320,10 @@ v2.0.0.zip内含的文件包括：
 [30]. Walzer K, Hietschold M. STM and STS investigation of ultrathin tin phthalocyanine layers adsorbed on HOPG (0001) and Au (111)[J]. Surface science, 2001, 471(1-3): 1-10.
 
 [31].  Liao H S, Werner C, Slipets R, et al. Low-cost, open-source XYZ nanopositioner for high-precision analytical applications[J]. HardwareX, 2022: e00317.
+
+[32]. De Voogd J M, Van Spronsen M A, Kalff F E, et al. Fast and reliable pre-approach for scanning probe microscopes based on tip-sample capacitance[J]. Ultramicroscopy, 2017, 181: 61-69.
+
+[33]. Wallash A J, Levit L. Electrical breakdown and ESD phenomena for devices with nanometer-to-micron gaps[C]//Reliability, Testing, and Characterization of MEMS/MOEMS Ii. SPIE, 2003, 4980: 87-96.
+
+[34]. Gao C, Kuhlmann-Wilsdorf D, Makel D D. The dynamic analysis of stick-slip motion[J]. Wear, 1994, 173(1-2): 1-12.
+
