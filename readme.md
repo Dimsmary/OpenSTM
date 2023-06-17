@@ -1,5 +1,7 @@
 <img src="OpenSTM_.jpg" title="" alt="OpenSTM_" data-align="center">
 
+![Render_whole](readme_image/Render_whole.jpg)
+
 - [简介](#简介)
 - [分支](#分支)
 - [开源文件结构介绍](#开源文件结构介绍)
