@@ -115,7 +115,7 @@ v2.0.0.zip内含的文件包括：
 
 ## 热解石墨（HOPG）原子成像
 
-![hopg](readme_image\hopg.jpg)
+![hopg](readme_image/hopg.jpg)
 
 # 联系我
 
