@@ -1,0 +1,13 @@
+et-xmlfile
+numpy
+openpyxl
+pandas
+Pillow
+PyQt5
+PyQt5-Qt5
+PyQt5-sip
+PyQt5-stubs
+pyqtgraph
+python-dateutil
+pytz
+six

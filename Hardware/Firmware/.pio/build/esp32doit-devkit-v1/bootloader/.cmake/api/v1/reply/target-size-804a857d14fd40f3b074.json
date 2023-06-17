@@ -1,0 +1,74 @@
+{
+	"backtrace" : 2,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_custom_target",
+			"project"
+		],
+		"files" : 
+		[
+			"C:/Users/Boris/.platformio/packages/framework-espidf/tools/cmake/project.cmake",
+			"CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 58,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 545,
+				"parent" : 1
+			}
+		]
+	},
+	"id" : "size::@6890427a1f51a3e7e1df",
+	"name" : "size",
+	"paths" : 
+	{
+		"build" : ".",
+		"source" : "."
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				1
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "E:/GitHub/STM/EspIDFProgram/3rdGenControl/MainControl_ESP_IDF/.pio/build/esp32doit-devkit-v1/bootloader/CMakeFiles/size",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "E:/GitHub/STM/EspIDFProgram/3rdGenControl/MainControl_ESP_IDF/.pio/build/esp32doit-devkit-v1/bootloader/CMakeFiles/size.rule",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "UTILITY"
+}

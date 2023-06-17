@@ -3,8 +3,6 @@
 - [简介](#简介)
 - [分支](#分支)
 - [开源文件结构介绍](#开源文件结构介绍)
-  - [文件介绍](#文件介绍)
-  - [电路部分](#电路部分)
 - [开发技术文档](#开发技术文档)
 - [版本发布命名规则](#版本发布命名规则)
 - [已发布的STM方案版本](#已发布的stm方案版本)
@@ -34,33 +32,29 @@
 
 # 开源文件结构介绍
 
-## 文件介绍
+- 3DModels
 
-- 3DModel  
-
-  该目录内包括了外壳设计文件、CNC加工所需的STEP文件  
+  包括**外壳设计文件**以及**CNC加工所需的STEP文件** 。
 
 - Docs
 
-  该目录下的文档介绍了当前版本下的STM构建、设计原理。
+  该目录下的文档包括了**项目概要**以及显**微镜构建指南**。
+  
+- Hardware
+  
+  包括使用ESP32 IDF编写的**单片机程序工程文件**（使用Platform IO），以及对应**固件**。
 
 
 - PCB
 
-  该目录下存放了LCEDA绘制的PCB文件，需要使用LCEDA打开。或直接在OSHWHUB在线浏览（详见电路部分）。
+  嘉立创EDA绘制的**PCB文件**，需要使用嘉立创EDA专业版打开。或直接在OSHW-Hub在线浏览（详见电路部分），移步[OSHWHUB](https://oshwhub.com/Dimsmary/4ieRpV8S00kGn1MTpsc4MyZat8MwQPzn)，点击右上方的“编辑器打开”。
 
-- Software  
-  该目录下包括了单片机程序（使用[Arduino](https://www.arduino.cc/)、[PlatformIO](https://platformio.org/)完成），用于控制单片机的Python程序（通过串口与单片机通讯，界面设计基于QT），用于转换扫描图像的Python程序。
-
-## 电路部分
-
-- 电路使用嘉立创EDA进行绘制，请移步[OSHWHUB](https://oshwhub.com/Dimsmary/4ieRpV8S00kGn1MTpsc4MyZat8MwQPzn)，点击右上方的“编辑器打开”。
+- PythonScript  
+  显微镜的上位机程序，具体使用方法参考**显微镜构建指南**。
 
 # 开发技术文档
 
-GitHub（国际节点）：[<u>技术文档 - GitHub</u> ](https://github.com/Dimsmary/OpenSTM/tree/main/Docs)
-
-Gitee（国内节点）：[<u>技术文档 - Gitee</u>](https://gitee.com/dimsmary/OpenSTM/tree/main/Docs)
+技术文档仍在编写当中，预计以PDF形式进行发布。
 
 # 版本发布命名规则
 
@@ -99,8 +93,11 @@ Gitee（国内节点）：[<u>技术文档 - Gitee</u>](https://gitee.com/dimsma
 v2.0.0.zip内含的文件包括：
 
 - 3DModel：SolidWorks绘制的3D模型文件、CNC加工所需的STEP文件
+
 - PCB：立创EDA专业版绘制的原理图、PCB文件
+
 - Software：在Arduino文件夹下，包含ESP32单片机的控制程序、ATMEGA 328P单片机的控制程序。在Python文件夹下，包含了上位机控制软件、图像转换程序
+
 
 # 目前取得的成果
 

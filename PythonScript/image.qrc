@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="image">
+    <file>STM_Label.jpg</file>
+    <file>open_stm.bmp</file>
+  </qresource>
+</RCC>

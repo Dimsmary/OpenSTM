@@ -1,0 +1,83 @@
+{
+	"backtrace" : 2,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_custom_target",
+			"partition_table_add_check_size_target"
+		],
+		"files" : 
+		[
+			"C:/Users/Boris/.platformio/packages/framework-espidf/components/partition_table/project_include.cmake",
+			"C:/Users/Boris/.platformio/packages/framework-espidf/components/esptool_py/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 53,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 99,
+				"parent" : 1
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"id" : "gen_project_binary::@6890427a1f51a3e7e1df"
+		},
+		{
+			"id" : "partition_table_bin::@8e7a60ee4fe55e1aaabf"
+		}
+	],
+	"id" : "app_check_size::@bf8f55be585a12323665",
+	"name" : "app_check_size",
+	"paths" : 
+	{
+		"build" : "esp-idf/esptool_py",
+		"source" : "C:/Users/Boris/.platformio/packages/framework-espidf/components/esptool_py"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				1
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : ".pio/build/esp32doit-devkit-v1/esp-idf/esptool_py/CMakeFiles/app_check_size",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".pio/build/esp32doit-devkit-v1/esp-idf/esptool_py/CMakeFiles/app_check_size.rule",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "UTILITY"
+}

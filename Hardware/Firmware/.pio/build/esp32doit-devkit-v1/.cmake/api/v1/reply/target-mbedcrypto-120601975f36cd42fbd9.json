@@ -1,0 +1,1101 @@
+{
+	"archive" : {},
+	"artifacts" : 
+	[
+		{
+			"path" : "esp-idf/mbedtls/mbedtls/library/libmbedcrypto.a"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"install",
+			"add_compile_options",
+			"idf_component_register",
+			"add_c_compile_options",
+			"include_directories",
+			"target_include_directories"
+		],
+		"files" : 
+		[
+			"C:/Users/Boris/.platformio/packages/framework-espidf/components/mbedtls/mbedtls/library/CMakeLists.txt",
+			"C:/Users/Boris/.platformio/packages/framework-espidf/tools/cmake/component.cmake",
+			"C:/Users/Boris/.platformio/packages/framework-espidf/components/mbedtls/CMakeLists.txt",
+			"C:/Users/Boris/.platformio/packages/framework-espidf/tools/cmake/utilities.cmake"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 257,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 304,
+				"parent" : 0
+			},
+			{
+				"file" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 2,
+				"line" : 18,
+				"parent" : 3
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 462,
+				"parent" : 4
+			},
+			{
+				"command" : 4,
+				"file" : 1,
+				"line" : 463,
+				"parent" : 4
+			},
+			{
+				"command" : 2,
+				"file" : 3,
+				"line" : 282,
+				"parent" : 6
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 473,
+				"parent" : 4
+			},
+			{
+				"command" : 5,
+				"file" : 1,
+				"line" : 461,
+				"parent" : 4
+			},
+			{
+				"command" : 5,
+				"file" : 2,
+				"line" : 87,
+				"parent" : 3
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 300,
+				"parent" : 0
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-mlongcalls -Wno-frame-address  -Wall -Wextra -Wwrite-strings -Wformat=2 -Wno-format-nonliteral -Wvla -Wlogical-op -Wshadow -Wformat-signedness -Wformat-overflow=2 -Wformat-truncation -Werror -Wmissing-declarations -Wmissing-prototypes  "
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-ffunction-sections"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-fdata-sections"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wall"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Werror=all"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wno-error=unused-function"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wno-error=unused-variable"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wno-error=deprecated-declarations"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wextra"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wno-unused-parameter"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wno-sign-compare"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wno-enum-conversion"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-gdwarf-4"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-ggdb"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Og"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-fmacro-prefix-map=E:/GitHub/STM/EspIDFProgram/3rdGenControl/MainControl_ESP_IDF=."
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-fmacro-prefix-map=C:/Users/Boris/.platformio/packages/framework-espidf=/IDF"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-fstrict-volatile-bitfields"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wno-error=unused-but-set-variable"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-fno-jump-tables"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-fno-tree-switch-conversion"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-DconfigENABLE_FREERTOS_DEBUG_OCDAWARE=1"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "-std=gnu17"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "-Wno-old-style-declaration"
+				},
+				{
+					"backtrace" : 8,
+					"fragment" : "-D_GNU_SOURCE"
+				},
+				{
+					"backtrace" : 8,
+					"fragment" : "-DIDF_VER=\\\"5.0.0\\\""
+				},
+				{
+					"backtrace" : 8,
+					"fragment" : "-DESP_PLATFORM"
+				},
+				{
+					"backtrace" : 8,
+					"fragment" : "-D_POSIX_READER_WRITER_LOCKS"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 0,
+					"define" : "MBEDTLS_CONFIG_FILE=\"mbedtls/esp_config.h\""
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 9,
+					"path" : "E:/GitHub/STM/EspIDFProgram/3rdGenControl/MainControl_ESP_IDF/.pio/build/esp32doit-devkit-v1/config"
+				},
+				{
+					"backtrace" : 10,
+					"path" : "C:/Users/Boris/.platformio/packages/framework-espidf/components/mbedtls/port/include"
+				},
+				{
+					"backtrace" : 11,
+					"path" : "C:/Users/Boris/.platformio/packages/framework-espidf/components/mbedtls/mbedtls/include"
+				},
+				{
+					"backtrace" : 11,
+					"path" : "C:/Users/Boris/.platformio/packages/framework-espidf/components/mbedtls/mbedtls/library"
+				},
+				{
+					"backtrace" : 1,
+					"path" : "C:/Users/Boris/.platformio/packages/framework-espidf/components/newlib/platform_include"
+				},
+				{
+					"backtrace" : 1,
+					"path" : "C:/Users/Boris/.platformio/packages/framework-espidf/components/freertos/FreeRTOS-Kernel/include"
+				},
+				{
+					"backtrace" : 1,
+					"path" : "C:/Users/Boris/.platformio/packages/framework-espidf/components/freertos/esp_additions/include/freertos"
+				},
+				{
+					"backtrace" : 1,
+					"path" : "C:/Users/Boris/.platformio/packages/framework-espidf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include"
+				},
+				{
+					"backtrace" : 1,
+					"path" : "C:/Users/Boris/.platformio/packages/framework-espidf/components/freertos/esp_additions/include"
+				},
+				{
+					"backtrace" : 1,
+					"path" : "C:/Users/Boris/.platformio/packages/framework-espidf/components/esp_hw_support/include"
+				},
+				{
+					"backtrace" : 1,
+					"path" : "C:/Users/Boris/.platformio/packages/framework-espidf/components/esp_hw_support/include/soc"
+				},
+				{
+					"backtrace" : 1,
+					"path" : "C:/Users/Boris/.platformio/packages/framework-espidf/components/esp_hw_support/include/soc/esp32"
+				},
+				{
+					"backtrace" : 1,
+					"path" : "C:/Users/Boris/.platformio/packages/framework-espidf/components/esp_hw_support/port/esp32/."
+				},
+				{
+					"backtrace" : 1,
+					"path" : "C:/Users/Boris/.platformio/packages/framework-espidf/components/esp_hw_support/port/esp32/private_include"
+				},
+				{
+					"backtrace" : 1,
+					"path" : "C:/Users/Boris/.platformio/packages/framework-espidf/components/heap/include"
+				},
+				{
+					"backtrace" : 1,
+					"path" : "C:/Users/Boris/.platformio/packages/framework-espidf/components/log/include"
+				},
+				{
+					"backtrace" : 1,
+					"path" : "C:/Users/Boris/.platformio/packages/framework-espidf/components/soc/include"
+				},
+				{
+					"backtrace" : 1,
+					"path" : "C:/Users/Boris/.platformio/packages/framework-espidf/components/soc/esp32/."
+				},
+				{
+					"backtrace" : 1,
+					"path" : "C:/Users/Boris/.platformio/packages/framework-espidf/components/soc/esp32/include"
+				},
+				{
+					"backtrace" : 1,
+					"path" : "C:/Users/Boris/.platformio/packages/framework-espidf/components/hal/esp32/include"
+				},
+				{
+					"backtrace" : 1,
+					"path" : "C:/Users/Boris/.platformio/packages/framework-espidf/components/hal/include"
+				},
+				{
+					"backtrace" : 1,
+					"path" : "C:/Users/Boris/.platformio/packages/framework-espidf/components/hal/platform_port/include"
+				},
+				{
+					"backtrace" : 1,
+					"path" : "C:/Users/Boris/.platformio/packages/framework-espidf/components/esp_rom/include"
+				},
+				{
+					"backtrace" : 1,
+					"path" : "C:/Users/Boris/.platformio/packages/framework-espidf/components/esp_rom/include/esp32"
+				},
+				{
+					"backtrace" : 1,
+					"path" : "C:/Users/Boris/.platformio/packages/framework-espidf/components/esp_rom/esp32"
+				},
+				{
+					"backtrace" : 1,
+					"path" : "C:/Users/Boris/.platformio/packages/framework-espidf/components/esp_common/include"
+				},
+				{
+					"backtrace" : 1,
+					"path" : "C:/Users/Boris/.platformio/packages/framework-espidf/components/esp_system/include"
+				},
+				{
+					"backtrace" : 1,
+					"path" : "C:/Users/Boris/.platformio/packages/framework-espidf/components/esp_system/port/soc"
+				},
+				{
+					"backtrace" : 1,
+					"path" : "C:/Users/Boris/.platformio/packages/framework-espidf/components/esp_system/port/include/private"
+				},
+				{
+					"backtrace" : 1,
+					"path" : "C:/Users/Boris/.platformio/packages/framework-espidf/components/xtensa/include"
+				},
+				{
+					"backtrace" : 1,
+					"path" : "C:/Users/Boris/.platformio/packages/framework-espidf/components/xtensa/esp32/include"
+				},
+				{
+					"backtrace" : 1,
+					"path" : "C:/Users/Boris/.platformio/packages/framework-espidf/components/lwip/include"
+				},
+				{
+					"backtrace" : 1,
+					"path" : "C:/Users/Boris/.platformio/packages/framework-espidf/components/lwip/include/apps"
+				},
+				{
+					"backtrace" : 1,
+					"path" : "C:/Users/Boris/.platformio/packages/framework-espidf/components/lwip/include/apps/sntp"
+				},
+				{
+					"backtrace" : 1,
+					"path" : "C:/Users/Boris/.platformio/packages/framework-espidf/components/lwip/lwip/src/include"
+				},
+				{
+					"backtrace" : 1,
+					"path" : "C:/Users/Boris/.platformio/packages/framework-espidf/components/lwip/port/esp32/include"
+				},
+				{
+					"backtrace" : 1,
+					"path" : "C:/Users/Boris/.platformio/packages/framework-espidf/components/lwip/port/esp32/include/arch"
+				}
+			],
+			"language" : "C",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13,
+				14,
+				15,
+				16,
+				17,
+				18,
+				19,
+				20,
+				21,
+				22,
+				23,
+				24,
+				25,
+				26,
+				27,
+				28,
+				29,
+				30,
+				31,
+				32,
+				33,
+				34,
+				35,
+				36,
+				37,
+				38,
+				39,
+				40,
+				41,
+				42,
+				43,
+				44,
+				45,
+				46,
+				47,
+				48,
+				49,
+				50,
+				51,
+				52,
+				53,
+				54,
+				55,
+				56,
+				57,
+				58,
+				59,
+				60,
+				61,
+				62,
+				63,
+				64,
+				65,
+				66,
+				67,
+				68,
+				69,
+				70,
+				71,
+				72,
+				73,
+				74,
+				75,
+				76,
+				77,
+				78,
+				79,
+				80,
+				81,
+				82,
+				83,
+				84
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"id" : "mbedx509::@12759e2a35724d846b97"
+		}
+	],
+	"id" : "mbedcrypto::@12759e2a35724d846b97",
+	"install" : 
+	{
+		"destinations" : 
+		[
+			{
+				"backtrace" : 2,
+				"path" : "lib"
+			}
+		],
+		"prefix" : 
+		{
+			"path" : "C:/Program Files (x86)/MainControl_ESP_IDF"
+		}
+	},
+	"name" : "mbedcrypto",
+	"nameOnDisk" : "libmbedcrypto.a",
+	"paths" : 
+	{
+		"build" : "esp-idf/mbedtls/mbedtls/library",
+		"source" : "C:/Users/Boris/.platformio/packages/framework-espidf/components/mbedtls/mbedtls/library"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13,
+				14,
+				15,
+				16,
+				17,
+				18,
+				19,
+				20,
+				21,
+				22,
+				23,
+				24,
+				25,
+				26,
+				27,
+				28,
+				29,
+				30,
+				31,
+				32,
+				33,
+				34,
+				35,
+				36,
+				37,
+				38,
+				39,
+				40,
+				41,
+				42,
+				43,
+				44,
+				45,
+				46,
+				47,
+				48,
+				49,
+				50,
+				51,
+				52,
+				53,
+				54,
+				55,
+				56,
+				57,
+				58,
+				59,
+				60,
+				61,
+				62,
+				63,
+				64,
+				65,
+				66,
+				67,
+				68,
+				69,
+				70,
+				71,
+				72,
+				73,
+				74,
+				75,
+				76,
+				77,
+				78,
+				79,
+				80,
+				81,
+				82,
+				83,
+				84
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/Boris/.platformio/packages/framework-espidf/components/mbedtls/mbedtls/library/aes.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/Boris/.platformio/packages/framework-espidf/components/mbedtls/mbedtls/library/aesni.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/Boris/.platformio/packages/framework-espidf/components/mbedtls/mbedtls/library/aria.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/Boris/.platformio/packages/framework-espidf/components/mbedtls/mbedtls/library/asn1parse.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/Boris/.platformio/packages/framework-espidf/components/mbedtls/mbedtls/library/asn1write.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/Boris/.platformio/packages/framework-espidf/components/mbedtls/mbedtls/library/base64.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/Boris/.platformio/packages/framework-espidf/components/mbedtls/mbedtls/library/bignum.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/Boris/.platformio/packages/framework-espidf/components/mbedtls/mbedtls/library/camellia.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/Boris/.platformio/packages/framework-espidf/components/mbedtls/mbedtls/library/ccm.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/Boris/.platformio/packages/framework-espidf/components/mbedtls/mbedtls/library/chacha20.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/Boris/.platformio/packages/framework-espidf/components/mbedtls/mbedtls/library/chachapoly.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/Boris/.platformio/packages/framework-espidf/components/mbedtls/mbedtls/library/cipher.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/Boris/.platformio/packages/framework-espidf/components/mbedtls/mbedtls/library/cipher_wrap.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/Boris/.platformio/packages/framework-espidf/components/mbedtls/mbedtls/library/constant_time.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/Boris/.platformio/packages/framework-espidf/components/mbedtls/mbedtls/library/cmac.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/Boris/.platformio/packages/framework-espidf/components/mbedtls/mbedtls/library/ctr_drbg.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/Boris/.platformio/packages/framework-espidf/components/mbedtls/mbedtls/library/des.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/Boris/.platformio/packages/framework-espidf/components/mbedtls/mbedtls/library/dhm.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/Boris/.platformio/packages/framework-espidf/components/mbedtls/mbedtls/library/ecdh.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/Boris/.platformio/packages/framework-espidf/components/mbedtls/mbedtls/library/ecdsa.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/Boris/.platformio/packages/framework-espidf/components/mbedtls/mbedtls/library/ecjpake.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/Boris/.platformio/packages/framework-espidf/components/mbedtls/mbedtls/library/ecp.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/Boris/.platformio/packages/framework-espidf/components/mbedtls/mbedtls/library/ecp_curves.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/Boris/.platformio/packages/framework-espidf/components/mbedtls/mbedtls/library/entropy.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/Boris/.platformio/packages/framework-espidf/components/mbedtls/mbedtls/library/entropy_poll.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/Boris/.platformio/packages/framework-espidf/components/mbedtls/mbedtls/library/error.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/Boris/.platformio/packages/framework-espidf/components/mbedtls/mbedtls/library/gcm.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/Boris/.platformio/packages/framework-espidf/components/mbedtls/mbedtls/library/hkdf.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/Boris/.platformio/packages/framework-espidf/components/mbedtls/mbedtls/library/hmac_drbg.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/Boris/.platformio/packages/framework-espidf/components/mbedtls/mbedtls/library/md.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/Boris/.platformio/packages/framework-espidf/components/mbedtls/mbedtls/library/md5.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/Boris/.platformio/packages/framework-espidf/components/mbedtls/mbedtls/library/memory_buffer_alloc.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/Boris/.platformio/packages/framework-espidf/components/mbedtls/mbedtls/library/mps_reader.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/Boris/.platformio/packages/framework-espidf/components/mbedtls/mbedtls/library/mps_trace.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/Boris/.platformio/packages/framework-espidf/components/mbedtls/mbedtls/library/nist_kw.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/Boris/.platformio/packages/framework-espidf/components/mbedtls/mbedtls/library/oid.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/Boris/.platformio/packages/framework-espidf/components/mbedtls/mbedtls/library/padlock.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/Boris/.platformio/packages/framework-espidf/components/mbedtls/mbedtls/library/pem.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/Boris/.platformio/packages/framework-espidf/components/mbedtls/mbedtls/library/pk.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/Boris/.platformio/packages/framework-espidf/components/mbedtls/mbedtls/library/pk_wrap.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/Boris/.platformio/packages/framework-espidf/components/mbedtls/mbedtls/library/pkcs12.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/Boris/.platformio/packages/framework-espidf/components/mbedtls/mbedtls/library/pkcs5.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/Boris/.platformio/packages/framework-espidf/components/mbedtls/mbedtls/library/pkparse.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/Boris/.platformio/packages/framework-espidf/components/mbedtls/mbedtls/library/pkwrite.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/Boris/.platformio/packages/framework-espidf/components/mbedtls/mbedtls/library/platform.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/Boris/.platformio/packages/framework-espidf/components/mbedtls/mbedtls/library/platform_util.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/Boris/.platformio/packages/framework-espidf/components/mbedtls/mbedtls/library/poly1305.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/Boris/.platformio/packages/framework-espidf/components/mbedtls/mbedtls/library/psa_crypto.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/Boris/.platformio/packages/framework-espidf/components/mbedtls/mbedtls/library/psa_crypto_aead.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/Boris/.platformio/packages/framework-espidf/components/mbedtls/mbedtls/library/psa_crypto_cipher.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/Boris/.platformio/packages/framework-espidf/components/mbedtls/mbedtls/library/psa_crypto_client.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/Boris/.platformio/packages/framework-espidf/components/mbedtls/mbedtls/library/psa_crypto_driver_wrappers.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/Boris/.platformio/packages/framework-espidf/components/mbedtls/mbedtls/library/psa_crypto_ecp.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/Boris/.platformio/packages/framework-espidf/components/mbedtls/mbedtls/library/psa_crypto_hash.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/Boris/.platformio/packages/framework-espidf/components/mbedtls/mbedtls/library/psa_crypto_mac.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/Boris/.platformio/packages/framework-espidf/components/mbedtls/mbedtls/library/psa_crypto_rsa.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/Boris/.platformio/packages/framework-espidf/components/mbedtls/mbedtls/library/psa_crypto_se.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/Boris/.platformio/packages/framework-espidf/components/mbedtls/mbedtls/library/psa_crypto_slot_management.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/Boris/.platformio/packages/framework-espidf/components/mbedtls/mbedtls/library/psa_crypto_storage.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/Boris/.platformio/packages/framework-espidf/components/mbedtls/mbedtls/library/psa_its_file.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/Boris/.platformio/packages/framework-espidf/components/mbedtls/mbedtls/library/ripemd160.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/Boris/.platformio/packages/framework-espidf/components/mbedtls/mbedtls/library/rsa.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/Boris/.platformio/packages/framework-espidf/components/mbedtls/mbedtls/library/rsa_alt_helpers.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/Boris/.platformio/packages/framework-espidf/components/mbedtls/mbedtls/library/sha1.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/Boris/.platformio/packages/framework-espidf/components/mbedtls/mbedtls/library/sha256.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/Boris/.platformio/packages/framework-espidf/components/mbedtls/mbedtls/library/sha512.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/Boris/.platformio/packages/framework-espidf/components/mbedtls/mbedtls/library/ssl_debug_helpers_generated.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/Boris/.platformio/packages/framework-espidf/components/mbedtls/mbedtls/library/threading.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/Boris/.platformio/packages/framework-espidf/components/mbedtls/mbedtls/library/timing.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/Boris/.platformio/packages/framework-espidf/components/mbedtls/mbedtls/library/version.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/Boris/.platformio/packages/framework-espidf/components/mbedtls/mbedtls/library/version_features.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/Boris/.platformio/packages/framework-espidf/components/mbedtls/port/esp_hardware.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/Boris/.platformio/packages/framework-espidf/components/mbedtls/port/esp_mem.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/Boris/.platformio/packages/framework-espidf/components/mbedtls/port/esp_timing.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/Boris/.platformio/packages/framework-espidf/components/mbedtls/port/sha/esp_sha.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/Boris/.platformio/packages/framework-espidf/components/mbedtls/port/aes/esp_aes_xts.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/Boris/.platformio/packages/framework-espidf/components/mbedtls/port/aes/esp_aes_common.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/Boris/.platformio/packages/framework-espidf/components/mbedtls/port/aes/block/esp_aes.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/Boris/.platformio/packages/framework-espidf/components/mbedtls/port/sha/parallel_engine/sha.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/Boris/.platformio/packages/framework-espidf/components/mbedtls/port/esp_bignum.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/Boris/.platformio/packages/framework-espidf/components/mbedtls/port/esp32/bignum.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/Boris/.platformio/packages/framework-espidf/components/mbedtls/port/sha/parallel_engine/esp_sha1.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/Boris/.platformio/packages/framework-espidf/components/mbedtls/port/sha/parallel_engine/esp_sha256.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/Boris/.platformio/packages/framework-espidf/components/mbedtls/port/sha/parallel_engine/esp_sha512.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/Boris/.platformio/packages/framework-espidf/components/mbedtls/port/md/esp_md.c",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "STATIC_LIBRARY"
+}

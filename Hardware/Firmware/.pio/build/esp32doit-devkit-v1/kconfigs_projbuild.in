@@ -1,0 +1,5 @@
+source "C:/Users/Boris/.platformio/packages/framework-espidf/components/bootloader/Kconfig.projbuild"
+source "C:/Users/Boris/.platformio/packages/framework-espidf/components/esp_app_format/Kconfig.projbuild"
+source "C:/Users/Boris/.platformio/packages/framework-espidf/components/esp_rom/Kconfig.projbuild"
+source "C:/Users/Boris/.platformio/packages/framework-espidf/components/esptool_py/Kconfig.projbuild"
+source "C:/Users/Boris/.platformio/packages/framework-espidf/components/partition_table/Kconfig.projbuild"

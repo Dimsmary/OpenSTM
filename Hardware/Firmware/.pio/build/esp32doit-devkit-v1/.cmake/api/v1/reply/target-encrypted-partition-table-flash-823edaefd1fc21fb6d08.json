@@ -1,0 +1,82 @@
+{
+	"backtrace" : 3,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_custom_target",
+			"fail_target",
+			"esptool_py_flash_target"
+		],
+		"files" : 
+		[
+			"C:/Users/Boris/.platformio/packages/framework-espidf/tools/cmake/utilities.cmake",
+			"C:/Users/Boris/.platformio/packages/framework-espidf/components/esptool_py/project_include.cmake",
+			"C:/Users/Boris/.platformio/packages/framework-espidf/components/partition_table/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 2
+			},
+			{
+				"command" : 2,
+				"file" : 2,
+				"line" : 130,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 477,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 240,
+				"parent" : 2
+			}
+		]
+	},
+	"id" : "encrypted-partition-table-flash::@8e7a60ee4fe55e1aaabf",
+	"name" : "encrypted-partition-table-flash",
+	"paths" : 
+	{
+		"build" : "esp-idf/partition_table",
+		"source" : "C:/Users/Boris/.platformio/packages/framework-espidf/components/partition_table"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				1
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 3,
+			"isGenerated" : true,
+			"path" : ".pio/build/esp32doit-devkit-v1/esp-idf/partition_table/CMakeFiles/encrypted-partition-table-flash",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".pio/build/esp32doit-devkit-v1/esp-idf/partition_table/CMakeFiles/encrypted-partition-table-flash.rule",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "UTILITY"
+}

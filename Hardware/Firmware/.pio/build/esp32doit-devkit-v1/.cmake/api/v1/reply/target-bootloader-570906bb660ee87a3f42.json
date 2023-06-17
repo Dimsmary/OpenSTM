@@ -1,0 +1,187 @@
+{
+	"backtrace" : 7,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_custom_target",
+			"externalproject_add",
+			"include",
+			"__build_process_project_includes",
+			"idf_build_process",
+			"project",
+			"add_dependencies"
+		],
+		"files" : 
+		[
+			"C:/Users/Boris/.platformio/packages/tool-cmake/share/cmake-3.16/Modules/ExternalProject.cmake",
+			"C:/Users/Boris/.platformio/packages/framework-espidf/components/bootloader/project_include.cmake",
+			"C:/Users/Boris/.platformio/packages/framework-espidf/tools/cmake/build.cmake",
+			"C:/Users/Boris/.platformio/packages/framework-espidf/tools/cmake/project.cmake",
+			"CMakeLists.txt",
+			"C:/Users/Boris/.platformio/packages/framework-espidf/components/bootloader/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 4
+			},
+			{
+				"command" : 5,
+				"file" : 4,
+				"line" : 3,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 3,
+				"line" : 440,
+				"parent" : 1
+			},
+			{
+				"command" : 3,
+				"file" : 2,
+				"line" : 599,
+				"parent" : 2
+			},
+			{
+				"command" : 2,
+				"file" : 2,
+				"line" : 380,
+				"parent" : 3
+			},
+			{
+				"file" : 1,
+				"parent" : 4
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 126,
+				"parent" : 5
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 3182,
+				"parent" : 6
+			},
+			{
+				"file" : 5
+			},
+			{
+				"command" : 6,
+				"file" : 5,
+				"line" : 8,
+				"parent" : 8
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 9,
+			"id" : "partition_table_bin::@8e7a60ee4fe55e1aaabf"
+		}
+	],
+	"folder" : 
+	{
+		"name" : "ExternalProjectTargets/bootloader"
+	},
+	"id" : "bootloader::@6890427a1f51a3e7e1df",
+	"name" : "bootloader",
+	"paths" : 
+	{
+		"build" : ".",
+		"source" : "."
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 7,
+			"isGenerated" : true,
+			"path" : ".pio/build/esp32doit-devkit-v1/CMakeFiles/bootloader",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".pio/build/esp32doit-devkit-v1/CMakeFiles/bootloader.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".pio/build/esp32doit-devkit-v1/CMakeFiles/bootloader-complete.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".pio/build/esp32doit-devkit-v1/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".pio/build/esp32doit-devkit-v1/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".pio/build/esp32doit-devkit-v1/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".pio/build/esp32doit-devkit-v1/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".pio/build/esp32doit-devkit-v1/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".pio/build/esp32doit-devkit-v1/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : ".pio/build/esp32doit-devkit-v1/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "UTILITY"
+}

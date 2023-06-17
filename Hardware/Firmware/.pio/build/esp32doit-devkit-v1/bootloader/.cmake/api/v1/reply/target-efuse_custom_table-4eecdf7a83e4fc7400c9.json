@@ -1,0 +1,88 @@
+{
+	"backtrace" : 2,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_custom_target",
+			"add_deprecated_target_alias",
+			"add_dependencies"
+		],
+		"files" : 
+		[
+			"C:/Users/Boris/.platformio/packages/framework-espidf/tools/cmake/utilities.cmake",
+			"C:/Users/Boris/.platformio/packages/framework-espidf/components/efuse/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 66,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 360,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 365,
+				"parent" : 1
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 3,
+			"id" : "efuse-custom-table::@2da764c922f8b73e9c75"
+		}
+	],
+	"id" : "efuse_custom_table::@2da764c922f8b73e9c75",
+	"name" : "efuse_custom_table",
+	"paths" : 
+	{
+		"build" : "esp-idf/efuse",
+		"source" : "C:/Users/Boris/.platformio/packages/framework-espidf/components/efuse"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				1
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "E:/GitHub/STM/EspIDFProgram/3rdGenControl/MainControl_ESP_IDF/.pio/build/esp32doit-devkit-v1/bootloader/esp-idf/efuse/CMakeFiles/efuse_custom_table",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "E:/GitHub/STM/EspIDFProgram/3rdGenControl/MainControl_ESP_IDF/.pio/build/esp32doit-devkit-v1/bootloader/esp-idf/efuse/CMakeFiles/efuse_custom_table.rule",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "UTILITY"
+}

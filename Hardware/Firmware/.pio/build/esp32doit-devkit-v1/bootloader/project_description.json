@@ -1,0 +1,22 @@
+{
+    "project_name":       "bootloader",
+    "project_path":       "C:/Users/Boris/.platformio/packages/framework-espidf/components/bootloader/subproject",
+    "build_dir":          "E:/GitHub/STM/EspIDFProgram/3rdGenControl/MainControl_ESP_IDF/.pio/build/esp32doit-devkit-v1/bootloader",
+    "config_file":        "E:/GitHub/STM/EspIDFProgram/3rdGenControl/MainControl_ESP_IDF/sdkconfig.esp32doit-devkit-v1",
+    "config_defaults":    "",
+    "app_elf":            "bootloader.elf",
+    "app_bin":            "bootloader.bin",
+    "git_revision":       "5.0.0",
+    "target":             "esp32",
+    "rev":                "0",
+    "phy_data_partition": "",
+    "monitor_baud" :      "115200",
+    "monitor_toolprefix": "xtensa-esp32-elf-",
+    "config_environment" : {
+        "COMPONENT_KCONFIGS" : "C:/Users/Boris/.platformio/packages/framework-espidf/components/efuse/Kconfig;C:/Users/Boris/.platformio/packages/framework-espidf/components/esp_common/Kconfig;C:/Users/Boris/.platformio/packages/framework-espidf/components/esp_hw_support/Kconfig;C:/Users/Boris/.platformio/packages/framework-espidf/components/esp_system/Kconfig;C:/Users/Boris/.platformio/packages/framework-espidf/components/freertos/Kconfig;C:/Users/Boris/.platformio/packages/framework-espidf/components/hal/Kconfig;C:/Users/Boris/.platformio/packages/framework-espidf/components/log/Kconfig;C:/Users/Boris/.platformio/packages/framework-espidf/components/newlib/Kconfig;C:/Users/Boris/.platformio/packages/framework-espidf/components/spi_flash/Kconfig",
+        "COMPONENT_KCONFIGS_PROJBUILD" : "C:/Users/Boris/.platformio/packages/framework-espidf/components/bootloader/Kconfig.projbuild;C:/Users/Boris/.platformio/packages/framework-espidf/components/esp_app_format/Kconfig.projbuild;C:/Users/Boris/.platformio/packages/framework-espidf/components/esp_rom/Kconfig.projbuild;C:/Users/Boris/.platformio/packages/framework-espidf/components/esptool_py/Kconfig.projbuild;C:/Users/Boris/.platformio/packages/framework-espidf/components/partition_table/Kconfig.projbuild"
+    },
+    "build_components" : [ "bootloader", "bootloader_support", "efuse", "esp_app_format", "esp_common", "esp_hw_support", "esp_rom", "esp_system", "esptool_py", "freertos", "hal", "log", "main", "micro-ecc", "newlib", "partition_table", "soc", "spi_flash", "xtensa", "" ],
+    "build_component_paths" : [ "C:/Users/Boris/.platformio/packages/framework-espidf/components/bootloader", "C:/Users/Boris/.platformio/packages/framework-espidf/components/bootloader_support", "C:/Users/Boris/.platformio/packages/framework-espidf/components/efuse", "C:/Users/Boris/.platformio/packages/framework-espidf/components/esp_app_format", "C:/Users/Boris/.platformio/packages/framework-espidf/components/esp_common", "C:/Users/Boris/.platformio/packages/framework-espidf/components/esp_hw_support", "C:/Users/Boris/.platformio/packages/framework-espidf/components/esp_rom", "C:/Users/Boris/.platformio/packages/framework-espidf/components/esp_system", "C:/Users/Boris/.platformio/packages/framework-espidf/components/esptool_py", "C:/Users/Boris/.platformio/packages/framework-espidf/components/freertos", "C:/Users/Boris/.platformio/packages/framework-espidf/components/hal", "C:/Users/Boris/.platformio/packages/framework-espidf/components/log", "C:/Users/Boris/.platformio/packages/framework-espidf/components/bootloader/subproject/main", "C:/Users/Boris/.platformio/packages/framework-espidf/components/bootloader/subproject/components/micro-ecc", "C:/Users/Boris/.platformio/packages/framework-espidf/components/newlib", "C:/Users/Boris/.platformio/packages/framework-espidf/components/partition_table", "C:/Users/Boris/.platformio/packages/framework-espidf/components/soc", "C:/Users/Boris/.platformio/packages/framework-espidf/components/spi_flash", "C:/Users/Boris/.platformio/packages/framework-espidf/components/xtensa", "" ],
+    "debug_prefix_map_gdbinit": ""
+}
