@@ -4,63 +4,68 @@
 
 **[中文](readme.md) | [English](readme_eng.md)**
 
-- [简介](#简介)
-- [分支](#分支)
-- [开源文件结构介绍](#开源文件结构介绍)
-- [开发技术文档](#开发技术文档)
-- [版本发布命名规则](#版本发布命名规则)
-- [已发布的STM方案版本](#已发布的stm方案版本)
+- [Introduction](#Introduction)
+- [Branches](#Branches)
+- [File Structure](#File Structure)
+- [Document](#Document)
+- [Release rules](#Release rules)
+- [Releases](#Release)
   - [<u>Release OpenSTM v1.0.0</u>](#urelease-openstm-v100u)
   - [<u>Release OpenSTM v2.0.0</u>](#urelease-openstm-v200u)
-- [目前取得的成果](#目前取得的成果)
-  - [隧穿距离-电流曲线](#隧穿距离-电流曲线)
-  - [热解石墨（HOPG）的偏压-电流曲线](#热解石墨hopg的偏压-电流曲线)
-  - [热解石墨（HOPG）原子成像](#热解石墨hopg原子成像)
-- [联系我](#联系我)
-- [开发记录](#开发记录)
-- [致谢](#致谢)
-- [参考工程](#参考工程)
-- [主要参考文献](#主要参考文献)
+- [Results](#Results)
+  - [Distance-tunneling current curve](#Distance-tunneling current curve)
+  - [Bias voltage-tunneling current curve of HOPG](#Bias voltage-tunneling current curve of HOPG)
+  - [Atom image of HOPG](#Atom image of HOPG)
+- [Contact me](#Contact me)
+- [Development Record](#Development Record)
+- [Acknowledgement](#Acknowledgement)
+- [Reference Project](#Reference Project)
+- [Reference Paper](#Reference Paper)
 
-# 简介
 
-嗨，本项目是一个旨在通过DIY来搭建一个原子级扫描隧道显微镜。  
 
-2022年6月，本项目已经成功测量了隧穿距离-电流曲线、热解石墨（HOPG）的偏压-电流曲线以及样品无尺寸定性成像。  
+# Introduction
 
-2023年5月，本项目成功扫描出热解石墨（HOPG）的碳原子。  
+Hi, this is a DIY STM(Scanning Tunneling Microscope) project!
 
-# 分支
+In June 2022: the distance-tunneling current curve, and bias voltage-tunneling current curve of HOPG were measured.
 
-本仓库目前创建了两个分支，即[主分支](https://github.com/Dimsmary/OpenSTM/tree/main)(main)以及[文档分支](https://github.com/Dimsmary/OpenSTM/tree/Ref-Document)(Ref-Document)。主分支中放置了源代码等工程设计文件，文档分支放置了开发过程中参考的文档资料。之所以将这两部分分离是因为文档文件体积过于庞大所导致的。
+In May 2023, the image of HOPG in atom resolution was obtained.
 
-# 开源文件结构介绍
+# Branches
+
+Currently, the repository has two branches: [main ](https://github.com/Dimsmary/OpenSTM/tree/main)and [Ref-Document](https://github.com/Dimsmary/OpenSTM/tree/Ref-Document).
+
+The open-source file was included in the main, and the references(datasheet, paper, etc.) documents were in the Ref-Documents branches. Since the documents file occupies a large amount of space, I have to separate the documents file into another branch.
+
+# File Structure
 
 - 3DModels
 
-  包括**外壳设计文件**以及**CNC加工所需的STEP文件** 。
+  Included **design file of structure** and **STEP file for CNC**
 
 - Docs
 
-  该目录下的文档包括了**项目概要**以及**显微镜构建指南**（编写中）。
+  Included **project introduction** and **build tutorial**(Still writing...)
   
 - Hardware
   
-  包括使用ESP32 IDF编写的**单片机程序工程文件**（使用Platform IO），以及对应**固件**。
+  **MCU source code**(by ESP-IDF and Platform IO) and **firmware**
 
 
 - PCB
 
-  嘉立创EDA绘制的**PCB文件**，需要使用嘉立创EDA专业版打开。或直接在OSHW-Hub在线浏览（详见电路部分），移步[OSHWHUB](https://oshwhub.com/Dimsmary/4ieRpV8S00kGn1MTpsc4MyZat8MwQPzn)，点击右上方的“编辑器打开”。
+  PCB file(Easy EDA), browsing online: [OSHWHUB](https://oshwhub.com/Dimsmary/4ieRpV8S00kGn1MTpsc4MyZat8MwQPzn)
 
 - PythonScript  
-  显微镜的上位机程序，具体使用方法参考**显微镜构建指南**。
+  
+  Control software code
 
-# 开发技术文档
+# Document
 
-技术文档仍在编写当中，预计以PDF形式进行发布。
+Still writing...
 
-# 版本发布命名规则
+# Release rules
 
 截至2022/07，目前已公布了两个不同机械结构的STM方案  
 
@@ -70,7 +75,7 @@
 
 以1.0.0为例，该版本号即代表第一代机械结构的STM设计方案。
 
-# 已发布的STM方案版本
+# Releases
 
 ## [<u>Release OpenSTM v1.0.0</u>](https://github.com/Dimsmary/OpenSTM/releases/tag/v1.0.0)
 
@@ -103,9 +108,9 @@ v2.0.0.zip内含的文件包括：
 - Software：在Arduino文件夹下，包含ESP32单片机的控制程序、ATMEGA 328P单片机的控制程序。在Python文件夹下，包含了上位机控制软件、图像转换程序
 
 
-# 目前取得的成果
+# Results
 
-## 隧穿距离-电流曲线
+## Distance-tunneling current curve
 
 ![D-I_curve](readme_image/D-I_curve.png)  
 
@@ -113,19 +118,19 @@ v2.0.0.zip内含的文件包括：
 
 ![D-I_curve_diffrate](readme_image/D-I_curve_diffrate.png)  
 
-## 热解石墨（HOPG）的偏压-电流曲线
+## Bias voltage-tunneling current curve of HOPG
 
 ![STSCruve](readme_image/STSCruve.png)
 
-## 热解石墨（HOPG）原子成像
+## Atom image of HOPG
 
 ![hopg](readme_image/hopg.jpg)
 
-# 联系我
+# Contact me
 
   如果你也想制作一个STM显微镜，或者对我有什么建议的话，可以在此页面提交Issue。
 
-# 开发记录
+# Development Record
 
 - 2021/11
   
@@ -232,23 +237,23 @@ v2.0.0.zip内含的文件包括：
 - 2023/05/03
   
   观察到HOPG上碳原子清晰的轮廓
-# 致谢
+# Acknowledgement
 
-**五邑大学以及五邑大学的老师们**
+**Wuyi University and Teachers**
 
-**深圳嘉立创科技集团股份有限公司**
+**JLC PCB and Easy EDA Team**
 
 **Jürgen Müller**
 
-**Daniel Berard的STM开源工程**
+**Daniel Berard's Project'**
 
-**John D. Alexander的STM开源工程**
+**John D. Alexander's Project**
 
-**中国科学院光电技术研究所**
+**Institude of Optics and Electronics, Chinese Academy of Sciences**
 
-**所有为本项目提供建议的哔哩哔哩朋友**
+**All friends from Bilibili**
 
-# 参考工程
+# Reference Project
 
 [1] John Alexander: STM Project, http://web.archive.org/web/20121107205242/http://www.geocities.com/spm_stm/Project.html
 
@@ -258,7 +263,7 @@ v2.0.0.zip内含的文件包括：
 
 [4] NanoSurf: NaioSTM, https://www.nanosurf.com/en/products/naiostm-stm-for-nanoeducation
 
-# 主要参考文献 
+# References Paper
 
 [1].  Binnig G, Rohrer H. Scanning tunneling microscope: U.S. Patent 4,343,993[P]. 1982-8-10.
 
