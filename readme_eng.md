@@ -4,23 +4,23 @@
 
 **[中文](readme.md) | [English](readme_eng.md)**
 
-- [Introduction](#Introduction)
-- [Branches](#Branches)
+- [Introduction](#introduction)
+- [Branches](#branches)
 - [File Structure](#file-structure)
-- [Document](#Document)
-- [Release rules](#Releaserules)
-- [Releases](#Release)
+- [Document](#document)
+- [Release rules](#release-rules)
+- [Releases](#release)
   - [<u>Release OpenSTM v1.0.0</u>](#urelease-openstm-v100u)
   - [<u>Release OpenSTM v2.0.0</u>](#urelease-openstm-v200u)
-- [Results](#Results)
-  - [Distance-tunneling current curve](#Distance-tunneling current curve)
-  - [Bias voltage-tunneling current curve of HOPG](#Bias voltage-tunnelingcurrentcurveofHOPG)
-  - [Atom image of HOPG](#AtomimageofHOPG)
-- [Contact me](#Contactme)
-- [Development Record](#DevelopmentRecord)
-- [Acknowledgement](#Acknowledgement)
-- [Reference Project](#ReferenceProject)
-- [Reference Paper](#ReferencePaper)
+- [Results](#results)
+  - [Distance-tunneling current curve](#distance-tunneling-current-curve)
+  - [Bias voltage tunneling current curve of HOPG](#bias-voltage-tunneling-current-curve-of-hopg)
+  - [Atom image of HOPG](#atom-image-of-hopg)
+- [Contact me](#contact-me)
+- [Development Record](#development-record)
+- [Acknowledgement](#acknowledgement)
+- [Reference Project](#reference-project)
+- [Reference Paper](#reference-paper)
 
 
 
