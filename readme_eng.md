@@ -6,7 +6,7 @@
 
 - [Introduction](#Introduction)
 - [Branches](#Branches)
-- [File Structure](#FileStructure)
+- [File Structure](#file-structure)
 - [Document](#Document)
 - [Release rules](#Releaserules)
 - [Releases](#Release)
@@ -16,7 +16,7 @@
   - [Distance-tunneling current curve](#Distance-tunneling current curve)
   - [Bias voltage-tunneling current curve of HOPG](#Bias voltage-tunnelingcurrentcurveofHOPG)
   - [Atom image of HOPG](#AtomimageofHOPG)
-- [Contact me](#Contact me)
+- [Contact me](#Contactme)
 - [Development Record](#DevelopmentRecord)
 - [Acknowledgement](#Acknowledgement)
 - [Reference Project](#ReferenceProject)
