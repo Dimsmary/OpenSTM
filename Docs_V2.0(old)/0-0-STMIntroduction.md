@@ -47,7 +47,7 @@ $$
 在定态情况下，不含时薛定谔方程取这样的形式：
 
 $$
-\frac{d^2 \psi}{d x^2}+\frac{2 m}{\hbar^2}(E-V) \psi=0
+\frac{d^2 \psi}{d x^2}+\frac{\hbar^2}{2 m}(E-V) \psi=0
 $$
 
 其中：
