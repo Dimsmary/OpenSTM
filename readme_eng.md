@@ -4,26 +4,6 @@
 
 **[中文](readme.md) | [English](readme_eng.md)**
 
-- [Introduction](#introduction)
-- [Branches](#branches)
-- [File Structure](#file-structure)
-- [Document](#document)
-- [Release rules](#release-rules)
-- [Releases](#release)
-  - [<u>Release OpenSTM v1.0.0</u>](#urelease-openstm-v100u)
-  - [<u>Release OpenSTM v2.0.0</u>](#urelease-openstm-v200u)
-- [Results](#results)
-  - [Distance-tunneling current curve](#distance-tunneling-current-curve)
-  - [Bias voltage tunneling current curve of HOPG](#bias-voltage-tunneling-current-curve-of-hopg)
-  - [Atom image of HOPG](#atom-image-of-hopg)
-- [Contact me](#contact-me)
-- [Development Record](#development-record)
-- [Acknowledgement](#acknowledgement)
-- [Reference Project](#reference-project)
-- [Reference Paper](#reference-paper)
-
-
-
 # Introduction
 
 Hi, this is a DIY STM(Scanning Tunneling Microscope) project!
@@ -31,6 +11,8 @@ Hi, this is a DIY STM(Scanning Tunneling Microscope) project!
 In June 2022: the distance-tunneling current curve, and bias voltage-tunneling current curve of HOPG were measured.
 
 In May 2023, the image of HOPG in atom resolution was obtained.
+
+**The replication manual manuscript has been published on Arxiv: https://arxiv.org/abs/2310.05413. The replication steps and required details can all be found in the manuscript.**
 
 # Branches
 
@@ -46,7 +28,7 @@ The open-source file was included in the main, and the references(datasheet, pap
 
 - Docs
 
-  Included **project introduction** and **build tutorial**(Still writing...)
+  Included **project introduction** and **build tutorial**
   
 - Hardware
   
@@ -63,49 +45,53 @@ The open-source file was included in the main, and the references(datasheet, pap
 
 # Document
 
-Still writing...
+The document has been published on Arxiv: https://arxiv.org/abs/2310.05413, and you can also find it in the doc folder.
 
-# Release rules
+# Version Release Naming Rules
 
-截至2022/07，目前已公布了两个不同机械结构的STM方案  
+As of October 2023, three different mechanical structures for the STM (Scanning Tunneling Microscope) have been published, with version 3.0.0 capable of basic STM functionality.
 
-虽然目前STM的搭建方案仍在修改完善，但目前发布的资料集合在一定程度上是能够运行的，故本项目将参考软件发行的方式，在STM方案更新后，采用Release的方式对方案进行发布，每次发布的STM方案版本号命名规则如下：
+This project will follow the software release approach, where after each update in the STM design, a release will be made. The version numbering for each released STM design will follow the following format:
 
-版本号以**A.B.C**式命名，当方案机械结构存在重构时，A将发生变化。在方案的电路、软件、机械结构存在较大的修改时，B将发生变化。当方案存在细微修改时，C将发生变化。
+The version number will be in the format of **A.B.C**. When there is a significant reconstruction of the mechanical structure, A will change. When there are substantial changes to the circuitry, software, or mechanical structure of the design, B will change. When there are minor modifications to the design, C will change.
 
-以1.0.0为例，该版本号即代表第一代机械结构的STM设计方案。
+For example, 1.0.0 represents the first-generation mechanical structure design of the STM.
 
 # Releases
 
 ## [<u>Release OpenSTM v1.0.0</u>](https://github.com/Dimsmary/OpenSTM/releases/tag/v1.0.0)
 
-这是初代STM方案，机械结构采用两块铝板搭建：[<u>你，亲眼看过原子吗？ - 哔哩哔哩</u>](https://www.bilibili.com/video/BV1Jr4y1v7gq)  
 
-方案较为简单，没有取得能够用于分析的实验结果，但后续方案的搭建基于本初代方案进行搭建，本版本的方案仅供参考，暂不提供详细的文档资料。  
-发布的方案文件包括了：
+This is the first-generation STM (Scanning Tunneling Microscope) design, constructed using two aluminum plates. You can view it here: https://www.youtube.com/watch?v=NZt7yUdhfqY
 
-- 3D模型文件（SolidWorks）
-- Arduino程序：用于控制STM的ESP32单片机控制程序（采用LVGL进行交互）、基于MPU9250的震动探测程序，均采用Arduino+Platform IO进行开发
-- PCB及原理图
-- 用于测量干涉条纹的Python脚本
-- LTSpice对电源芯片的仿真文件
+This design is relatively simple and did not yield experimental results suitable for analysis. However, subsequent designs are built upon this first-generation design. This version of the design is provided for reference only and does not currently include detailed documentation.
+
+The released design files include:
+
+- 3D model files (SolidWorks).
+- Arduino programs: These programs control the STM and include the ESP32 microcontroller control program (using LVGL for interaction) and a vibration detection program based on the MPU9250. Both were developed using Arduino and Platform IO.
+- PCB and schematic files.
+- Python scripts for measuring interference fringes.
+- LTSpice simulation files for the power supply chip.
 
 ## [<u>Release OpenSTM v2.0.0</u>](https://github.com/Dimsmary/OpenSTM/releases/tag/v2.0.0)
 
-该版本方案为第二代显微镜结构：  [<u>耗时九个月，我可能来到了纳米尺度...... - 哔哩哔哩</u>](https://www.bilibili.com/video/BV1eB4y1S7u8)
+This version of the design represents the second-generation microscope structure. You can view it here: https://www.youtube.com/watch?v=2gPIJrTNqIA
 
-该方案的结构能够测量：
+The structure of this design allows for the measurement of:
 
-- 隧穿距离-电流曲线
-- 扫描隧道谱（STS）
+- Tunneling distance-current curves.
+- Scanning Tunneling Spectroscopy (STS).
 
-v2.0.0.zip内含的文件包括：
+The files included in v2.0.0.zip are:
 
-- 3DModel：SolidWorks绘制的3D模型文件、CNC加工所需的STEP文件
+- 3DModel: 3D model files drawn in SolidWorks and STEP files required for CNC machining.
+- PCB: Schematics and PCB files drawn using the professional version of Jialichuang EDA.
+- Software: In the Arduino folder, it includes control programs for the ESP32 microcontroller and the ATMEGA 328P microcontroller. In the Python folder, it contains the upper-level control software and image conversion programs.
 
-- PCB：立创EDA专业版绘制的原理图、PCB文件
+## [Release OpenSTM v3.0.0](https://github.com/Dimsmary/OpenSTM/releases/tag/v3.0.0)
 
-- Software：在Arduino文件夹下，包含ESP32单片机的控制程序、ATMEGA 328P单片机的控制程序。在Python文件夹下，包含了上位机控制软件、图像转换程序
+This is the third-generation scanning tunneling microscope, a version with basic functionality that can perform curve measurements and HOPG atomic imaging. Video: https://www.youtube.com/watch?v=noWLMcfyqbQ Replication paper manuscript: https://arxiv.org/abs/2310.05413 For detailed information, please refer to the manuscript.
 
 
 # Results
@@ -128,115 +114,118 @@ v2.0.0.zip内含的文件包括：
 
 # Contact me
 
-  如果你也想制作一个STM显微镜，或者对我有什么建议的话，可以在此页面提交Issue。
+If you would like to build an STM microscope yourself or have any suggestions for me, you can submit an issue on this page.
 
 # Development Record
 
-- 2021/11
-  
-  不稳定隧穿
+- November 2021
 
-- 2022/1/11
-  
-  开源页面提交
+  Unstable tunneling.
 
-- 2022/1/18
-  
-  减震台下加装了<网球>，减震效果拔群
+- January 11, 2022
 
-- 2022/2/05
-  
-  1）系统模拟部分供电改为9V电池供电，数字部分继续使用开关电源。  
-  2）ADP5070不工作了，奶奶的！为什么。  
-  3）在《 Construction of a scanning tunneling microscope for imaging of carbon nanotubes》P35中发现隧穿电流应在100pA - 10nA，按照现有运放的倍数应该关注1V以内的信号，之前看样子搞错了。  
-  4）OPA627的 ~~开环电压增益有120dB，~~ 输入偏置电流1pA，讲道理用100MΩ的反馈电阻应该是可行的？  
+  Submission of the open-source page.
 
-- 2022/2/16  
-  
-  对运放的输入输出特性进行了测试，证明前级隧道电流放大电路是可行的。
+- January 18, 2022
 
-- 2022/3/14  
-  
-  1）CNC加工的新结构加工完成  
-  2）摒弃LVGL与显示屏作为控制系统  
+  Added tennis balls under the vibration isolation table, significantly improving vibration isolation.
 
-- 2022/3/21  
-  
-  使用了新的结构系统、电路、控制系统进行了隧穿电流进近测试：  
-  1）隧穿电流初步稳定，能够维持十几秒。  
-  2）通过八个点的采样测试隧穿电流-压电陶瓷形变曲线发现基本符合指数特征。  
-  3）确认并不需要非常复杂的减震系统。  
-  4）基本确认之前出现的输出跳动现象为热膨胀的失配。
+- February 05, 2022
 
-- 2022/4/12  
-  
-  1）在对进近机械结构中的步进电机进行热隔离调整后，隧穿电流已非常稳定，能够维持至少30分钟。  
-  2）对新的隧穿曲线进行分析，发现电流-压电陶瓷形变关系并不只是单纯的指数关系，结合老师给出的意见，怀疑有其他函数复合。初步怀疑为针尖与样品间形成的电容器导致的。  
-  3）完善了细进近控制算法，现在可以点击开始进近之后去打几把极地大乱斗。  
-  4）模拟部分供电由9V电池供电更换为3S锂聚合物电池供电。
+  1. Changed the power supply for the system simulation part to 9V battery while continuing to use a switch power supply for the digital part.
+  2. ADP5070 stopped working. Frustrating!
+  3. Discovered that tunneling current should be between 100pA - 10nA, which suggests signals within 1V for the existing op-amps, realizing previous mistakes.s
+  4. OPA627 has an open-loop voltage gain of 120dB and input bias current of 1pA, making it reasonable to use a 100MΩ feedback resistor?
 
-- 2022/4/20  
-  完成恒高模式下的STM图像扫描，并经过重复性实验验证，但无法确定图像尺度以及成像内容的完全可靠。
+- February 16, 2022
 
-- 2022/5/01  
-  攥写毕业设计论文。
+  Tested the input-output characteristics of the op-amp, confirming the feasibility of the front-end tunnel current amplification circuit.
 
-- 2022/5/04  
-  毕业设计论文攥写完成70%，开始编写恒流扫描算法。  
+- March 14, 2022
 
-- 2022/6/16  
-  第二代显微镜开源资料公布  
+  1. Completed CNC machining for the new structural design.
+  2. Abandoned LVGL and display as the control system.
 
-- 2022/10/21
-  
-  开始设计粘滑压电马达
+- March 21, 2022
 
-- 2022/10/26
-  
-  完善技术文档
-  
-- 2023/1/4
-  第三代电路、机械结构重构完成，粘滑压电马达设计完成，进入调试阶段（目前未发布，待验证后发布）。
-  
-  （1）电路电源方面：重构后的电路采用ADP5070搭配低噪声LDO的方案提供多个电源轨道（双±12V、5V），ADP5070采用紫米35W双C口电源适配器进行5V供电（原因在于该电源纹波极低，峰峰值在13mV左右，呈现为锯齿状）。
-  
-  （2）PCB板层设计方面：新一代电路板分为三块：电源板、MCU板、控制板。电源线在板之间采用同轴信号线连接，数据线采用IDC排线连接。
-  
-  （3）电路改进方面：MCU板继续沿用ESP32作为控制器，但模组型号更新为ESP32-S3，并留有WIFI天线挖槽，为日后升级做准备。控制板沿用第二代大部分设计保持不变，继续使用AD5761+OPA2227的方案对扫描头进行控制，但由于压电滑台的引入，控制板额外添加了AD8761作为对样品施加偏压的DAC，原本用于施加偏压的DAC现用于控制压电滑台。
-  
-  （4）机械结构设计方面：新一代机械结构整体尺寸缩小，并引入了粘-滑压电滑台进行粗进近（参考文章《Open-source XYZ nanopositioner for high-precision analytical applications》），并对前级放大器进行了金属全包裹屏蔽，进一步降低噪声耦合。
-  
-- 2023/1/18
+  Conducted tunnel current approach tests using the new structural system, circuit, and control system:
 
-  MCU模组更换为ESP32-WROOM-32E，S3模组的编译出现了一些问题，资料较少暂时无法解决。
-  
-  另外，为了提升MCU的效率，将开发框架从Arduino变更为ESP-IDF（从简单的GPIO翻转代码中发现，Platform IO + Arduino速度为800Khz，Arduino IDE为1.2Mhz，Platform IO + ESP-IDF为1.44Mhz）。
-  
-- 2023/2/12
-  
-  第三代电路、机械结构修改、验证完成。
-  
-  目前正在重构上位机、控制程序，截止目前已实现探针进近的PID控制，电流相较于上一代设计更加稳定，温漂问题得到很大程度改善。
-  
-- 2023/03/31
-  
-  1）发现了一些在压电滑台组装时遇到的问题：虽然压电滑台组装难度不高，但滑台在安装时需要与施加压力的磁铁保持一定程度的平行，否则压电滑台将无法长距离工作。
-  
-  2）拟设计两种压电滑台结构以适配不同形状的压电陶瓷
-  
-  3）软件完成D-I曲线测试以及偏压测试功能
-  
-- 2023/05/02
-  
-  1）完成了对HOPG的扫描，可以观察到碳原子模糊的轮廓。
-  
-  2）发现了一个有趣的现象：在探测HOPG样品的过程中，探针接近完成后的隧穿电流将会产生波动（环境振动引起），若此时的探针锐度达到了原子级分辨率，隧穿电流的波动曲线将会被耦合进一个类正弦波的曲线，并且在撞针后，这个耦合将消失（确定不为市电干扰，其波动周期为1.4ms左右，且在撞针后会消失）。
-  
-  我认为这是因为探针在进入隧穿距离之后，在环境振动的带动下，探针的X/Y轴将随着振动而移动，形成“扫描”的效果，碳原子表面的起伏将导致电流的周期性变化。
-  
-- 2023/05/03
-  
-  观察到HOPG上碳原子清晰的轮廓
+  1. Tunnel current is initially stable and can be maintained for about ten seconds.
+  2. Found that the tunnel current-piezoelectric ceramic deformation curve, sampled at eight points, generally follows exponential characteristics.
+  3. Confirmed that a complex vibration isolation system is not required.
+  4. Essentially confirmed that the previous output jumping phenomenon was due to thermal expansion mismatch.
+
+- April 12, 2022
+
+  1. Tunnel current has become very stable after adjusting the heat isolation of the stepping motor in the approach mechanical structure. It can now be maintained for at least 30 minutes.
+  2. Analyzed the new tunneling curve and suspected that the current-piezoelectric ceramic deformation relationship is not purely exponential. It might be due to the formation of a capacitor between the tip and the sample.
+  3. Improved the fine approach control algorithm, allowing you to engage in polar battles after clicking "start approach."
+  4. Changed the power supply for the simulation part from a 9V battery to a 3S lithium-polymer battery.
+
+- April 20, 2022
+
+  Completed STM image scanning in constant height mode and verified it through repeated experiments, but could not reliably determine the image scale and content.
+
+- May 01, 2022
+
+  Started writing the graduation thesis.
+
+- May 04, 2022
+
+  70% of the graduation thesis writing is complete, began writing the constant current scanning algorithm.
+
+- June 16, 2022
+
+  Released open-source materials for the second-generation microscope.
+
+- October 21, 2022
+
+  Started designing stick-slip piezoelectric motors.
+
+- October 26, 2022
+
+  Improved technical documentation.
+
+- January 4, 2023
+
+  Completed the reconstruction of the third-generation circuit and mechanical structure, designed the stick-slip piezoelectric motor, and entered the debugging phase (not yet released, pending validation).
+
+  (1) Regarding circuit power supply: The reconstructed circuit uses the ADP5070 with a low-noise LDO scheme to provide multiple power rails (dual ±12V, 5V). The ADP5070 is powered by a 35W dual-C port power adapter with extremely low ripple (peaking at around 13mV, resembling a sawtooth wave).
+
+  (2) Regarding PCB layer design: The new generation circuit board is divided into three parts: power board, MCU board, and control board. Coaxial signal lines are used for connections between the boards, while IDC ribbon cables are used for data lines.
+
+  (3) Regarding circuit improvements: The MCU board continues to use ESP32 as the controller, but the module model is updated to ESP32-S3, with a slot reserved for a WIFI antenna for future upgrades. The control board largely maintains the design of the second generation, continuing to use the AD5761+OPA2227 scheme to control the scanning head. However, due to the introduction of the piezoelectric slide stage, the control board adds an AD8761 as a DAC to apply bias voltage to the sample, repurposing the originally used DAC for biasing to control the piezoelectric slide stage.
+
+  (4) Regarding mechanical structure design: The new generation mechanical structure has reduced overall dimensions and introduced a stick-slip piezoelectric slide stage for coarse approach (referencing the article "Open-source XYZ nanopositioner for high-precision analytical applications"). Additionally, the front-end amplifier has been further shielded with full metal wrapping to further reduce noise coupling.
+
+- January 18, 2023
+
+  The MCU module was changed to ESP32-WROOM-32E, and some issues arose with the S3 module that currently cannot be resolved due to limited documentation. To improve MCU efficiency, the development framework was changed from Arduino to ESP-IDF (simple GPIO code flipping revealed that Platform IO + Arduino runs at 800KHz, Arduino IDE at 1.2MHz, and Platform IO + ESP-IDF at 1.44MHz).
+
+- February 12, 2023
+
+  Completed modifications and validation of the third-generation circuit, mechanical structure, and testing are ongoing. Currently, PID control for probe approach has been implemented, resulting in more stable current compared to the previous generation, and a significant improvement in thermal drift issues.
+
+- March 31, 2023
+
+  1. Encountered some issues during the assembly of the piezoelectric slide stage: Although the assembly difficulty of the piezoelectric slide stage is not high, the slide stage needs to be kept somewhat parallel to the magnet applying pressure during installation; otherwise, the piezoelectric slide stage will not work over long distances.
+  2. Planning to design two piezoelectric slide stage structures to adapt to different shapes of piezoelectric ceramics.
+  3. Software completed D-I curve testing and bias testing functionality.
+
+- May 02, 2023
+
+  1. Completed scanning of HOPG, and observed the blurred outline of carbon atoms.
+  2. Discovered an interesting phenomenon: during the detection of HOPG samples, the tunneling current will fluctuate as the probe approaches (caused by environmental vibrations). If the sharpness of the probe reaches atomic resolution at this time, the fluctuation curve of the tunneling current will be coupled into a sinusoidal-like curve, and this coupling will disappear after a collision with the sample (confirmed not to be interference from the power grid, with a fluctuation period of about 1.4ms and disappearing after a probe collision).
+
+  I believe this is because after entering the tunneling distance, the probe's X/Y axis moves with the vibration caused by environmental vibrations, creating a "scanning" effect, and the undulations on the carbon atom surface lead to periodic variations in current.
+
+- May 03, 2023
+
+  Observed clear outlines of carbon atoms on HOPG.
+
+- October 10, 2023
+
+  The HardwareX manuscript for the third-generation hardware has been published on Arxiv: https://arxiv.org/abs/2310.05413.
 # Acknowledgement
 
 **Wuyi University and Teachers**
