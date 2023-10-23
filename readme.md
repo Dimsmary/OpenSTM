@@ -12,6 +12,7 @@
 - [已发布的STM方案版本](#已发布的stm方案版本)
   - [<u>Release OpenSTM v1.0.0</u>](#urelease-openstm-v100u)
   - [<u>Release OpenSTM v2.0.0</u>](#urelease-openstm-v200u)
+  - [<u>Release OpenSTM v3.0.0</u>](#urelease-openstm-v300u)
 - [目前取得的成果](#目前取得的成果)
   - [隧穿距离-电流曲线](#隧穿距离-电流曲线)
   - [热解石墨（HOPG）的偏压-电流曲线](#热解石墨hopg的偏压-电流曲线)
