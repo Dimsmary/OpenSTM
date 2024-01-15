@@ -12,7 +12,7 @@ In June 2022: the distance-tunneling current curve, and bias voltage-tunneling c
 
 In May 2023, the image of HOPG in atom resolution was obtained.
 
-**The replication manual manuscript has been published on Arxiv: https://arxiv.org/abs/2310.05413. The replication steps and required details can all be found in the manuscript.**
+**This project has been published on HardWareX, all the details can be found in the article. DOI:  https://doi.org/10.1016/j.ohx.2023.e00504**
 
 # Branches
 
