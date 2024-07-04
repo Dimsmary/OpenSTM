@@ -51,6 +51,7 @@
 - Hardware
   
   包括使用ESP32 IDF编写的**单片机程序工程文件**（使用Platform IO），以及对应**固件**。
+  注意！Platform IO的Platforms-Espressif 32版本应选择6.0.0，否则可能无法通过编译。
 
 
 - PCB
